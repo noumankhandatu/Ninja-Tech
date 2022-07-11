@@ -1,8 +1,36 @@
-import React from "react";
-import logo from "../atom/assets/images/logo.png";
+import React, { useState } from "react";
 import Image from "next/image";
 import Wrapper from "./wrapper";
+import Link from "next/link";
 const Header = () => {
+  const [activeLink, setActiveLink] = useState<number>(0);
+  const headerEle = [
+    {
+      title: "About ninja",
+      path: "/",
+      id: 0,
+    },
+    {
+      title: "Services",
+      path: "/services",
+      id: 1,
+    },
+    {
+      title: "Values and Purpose ",
+      path: "/valueAndPurpose",
+      id: 2,
+    },
+    {
+      title: "Branch",
+      path: "/branch",
+      id: 3,
+    },
+    {
+      title: "Portfolio",
+      path: "/portfolio",
+      id: 4,
+    },
+  ];
   return (
     <Wrapper contained={true} className="flex justify-between items-center p-5">
       <div className="flex items-center">
@@ -12,13 +40,23 @@ const Header = () => {
           width={139}
           height={57}
         ></Image>
-        <p className=" ml-32 mr-5 text-1xl">About Ninja </p>
-        <p className="ml-6 text-1xl">Services</p>
-        <p className="ml-6 text-1xl">Values and Purpose </p>
-        <p className="ml-6 text-1xl">Branch </p>
-        <p className="ml-6 text-1xl">Portfolio</p>
+        <div className="flex ml-14  items-center">
+          {headerEle?.map((items, id) => {
+            return (
+              <Link href={`${items.path}`}>
+                <p
+                  onClick={() => setActiveLink(id)}
+                  className={`${
+                    items.id == activeLink ? "active" : "unactive"
+                  } ml-6 p-1 text-[17px] font-medium cursor-pointer hover:border-b-[#ff5b2e] ease-in-out duration-700`}
+                >
+                  {items.title}
+                </p>
+              </Link>
+            );
+          })}
+        </div>
       </div>
-
       <button className="text-center text-white font-bold rounded pl-8 pt-2 pb-2 pr-8  focus:outline-none bg-black border-2 ">
         Lets Talk
       </button>

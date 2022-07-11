@@ -10,7 +10,9 @@ const Wrapper = ({ children, contained, full, className }: WrapperProps) => {
     <>
       {full ? <div className={`${className}`}>{children}</div> : null}
       {contained ? (
-        <div className={`${className} pl-20 pr-20`}>{children}</div>
+        <div className={`${className} lg:pl-48 lg:pr-48 pl-5 pr-5`}>
+          {children}
+        </div>
       ) : null}
     </>
   );
