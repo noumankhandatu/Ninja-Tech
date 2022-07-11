@@ -5,6 +5,11 @@ module.exports = {
     "./scr/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      sans: ["Montserrat"],
+      serif: ["Montserrat"],
+      mono: ["Montserrat"],
+    },
     extend: {},
   },
   plugins: [],
