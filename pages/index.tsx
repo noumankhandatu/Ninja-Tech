@@ -170,9 +170,11 @@ const Home: NextPage = () => {
           <p className="text-2xl">
             design, or web development, we want to hear from you!
           </p>
-          <button className="pl-10 pr-10 pt-4 pb-4 mt-12 bg-orange-600 text-white  text-center">
-            Join Our Team !
-          </button>
+          <div className="flex mt-12 justify-center">
+            <Button variant="contained" className="filled">
+              Join Our Team !
+            </Button>
+          </div>
         </Wrapper>
       </div>
       {/* // form */}

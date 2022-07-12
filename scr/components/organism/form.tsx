@@ -2,6 +2,7 @@ import React from "react";
 import Wrapper from "./wrapper";
 import Input from "../atom/input";
 import TextArea from "../atom/textarea";
+import Button from '../molecule/button';
 
 const Form = () => {
   return (
@@ -16,7 +17,7 @@ const Form = () => {
       </div>
       <TextArea />
        <div className="flex pt-10 justify-center">
-       <button className="bg-orange-500 pl-16 pr-16 pt-2 pb-2 font-bolder text-white rounded-full ">Submit Now</button>
+       <Button variant="secondary">Submit Now</Button>
        </div>
     </Wrapper>
   );
