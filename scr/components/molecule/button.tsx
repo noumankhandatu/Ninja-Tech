@@ -10,12 +10,14 @@ const Button = ({ variant, children }: ButtonProps) => {
     "bg-orange-600 pt-3 pb-3 pl-8 pr-8 text-white  top-80 align-middle -right-16  fixed -rotate-90";
   const primary =
     "text-center rounded text-white px-[25px] py-[10px]  h-[45px] w-[127px] text-[17px]  bg-black hover:bg-[#FF5B2E] ease-in-out duration-500";
+  const outlined =
+    "text-center rounded text-black hover:text-white  border-2 border-black py-[11px]  h-[50px] w-[142px] text-[16px]  bg-white hover:bg-black ease-in-out duration-500";
   return (
     <div>
       <div
-        className={`${variant === "fixed" ? fixed : null}  ${
+        className={`${variant === "fixed" ? fixed : null}   ${
           variant === "primary" ? primary : null
-        } cursor-pointer`}
+        } ${variant === "outlined" ? outlined : null}  cursor-pointer`}
       >
         {children}
       </div>

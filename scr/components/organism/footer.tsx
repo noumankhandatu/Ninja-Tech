@@ -4,6 +4,7 @@ import Wrapper from "./wrapper";
 import AppFont from "../atom/AppFont";
 import { IoMdCall } from "react-icons/io";
 import { TbBuilding } from "react-icons/tb";
+import Button from "../molecule/button";
 const Footer = () => {
   return (
     <Wrapper contained={true} className="pt-10 pb-10 ">
@@ -18,6 +19,7 @@ const Footer = () => {
           <AppFont className="mb-2 mt-3">
             Our Agency Provides Custom Software Development Solutions
           </AppFont>
+          <Button variant="outlined">Get in touch</Button>
         </div>
         <div>
           <p className="text-[25px] font-semibold mb-3">Company</p>
