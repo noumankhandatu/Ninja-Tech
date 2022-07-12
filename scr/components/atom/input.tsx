@@ -6,14 +6,19 @@ const Input = ({ label }: InputProps) => {
     <div className=" pb-10">
       <form>
         <div>
-          <label htmlFor="first">{label} *</label>
+          <label
+            className="text-[16px] font-medium text-[#2A2A2A]"
+            htmlFor="first"
+          >
+            {label} *
+          </label>
         </div>
         <div className="pt-4">
           <input
             style={{ width: "352px" }}
             type="text"
             id="first"
-            className="bg-blue-50 border border-gray-500 rounded h-9"
+            className="bg-blue-50 border border-[#B8C8CF] outline-0  pl-1 pr-1 rounded h-9 	"
             name="first"
             required
           />

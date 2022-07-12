@@ -23,7 +23,7 @@ const Button = ({ variant, className, children, endIcon }: ButtonProps) => {
     "bg-App-orange hover:bg-slate-900 font-bold text-white rounded-full ease-in-out duration-700 w-[190px] py-[10px] text-center";
   // big btn
   const alpha =
-    "w-[209px] bg-App-orange text-[19px]  text-center px-[18px] py-[20px] h-[65px] text-white rounded filled";
+    "w-[271px] bg-App-orange text-[25px]  text-center px-[18px] py-[20px] h-[81px] text-white rounded filled";
   return (
     <div>
       <div
