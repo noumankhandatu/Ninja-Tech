@@ -7,13 +7,13 @@ type AppFontProps = {
 };
 const AppFont = ({ children, className, endIcon, startIcon }: AppFontProps) => {
   return (
-    <p
+    <div
       className={`${className} text-[15px] font-normal text-{#1C1B1B} flex `}
     >
       {startIcon && <div className={`${className} mt-1`}>{startIcon}</div>}
       {children}
       {endIcon && endIcon}
-    </p>
+    </div>
   );
 };
 

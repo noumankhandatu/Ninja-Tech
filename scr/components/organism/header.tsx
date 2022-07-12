@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Wrapper from "./wrapper";
 import Link from "next/link";
+import Button from "../molecule/button";
 const Header = () => {
   const [activeLink, setActiveLink] = useState<number>(0);
   const headerEle = [
@@ -57,9 +58,7 @@ const Header = () => {
           })}
         </div>
       </div>
-      <button className="text-center text-white font-bold rounded pl-8 pt-2 pb-2 pr-8  focus:outline-none bg-black border-2 ">
-        Lets Talk
-      </button>
+      <Button variant="primary">Lets Talk</Button>
     </Wrapper>
   );
 };

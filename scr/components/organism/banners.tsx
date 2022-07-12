@@ -1,6 +1,7 @@
 import React from "react";
 import Wrapper from "./wrapper";
-
+import Button from "../molecule/button";
+import { AiOutlineRight } from "react-icons/ai";
 export const ProjectInMindBanner = () => {
   return (
     <>
@@ -15,9 +16,9 @@ export const ProjectInMindBanner = () => {
             </p>
           </div>
           <div>
-            <button className="pl-20 pr-20 p-7 text-center  text-2xl text-white bg-orange-500 rounded-md">
+            <Button variant="alpha" endIcon={<AiOutlineRight />}>
               Contact Us
-            </button>
+            </Button>
           </div>
         </div>
       </Wrapper>

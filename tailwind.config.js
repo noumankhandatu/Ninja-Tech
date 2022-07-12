@@ -10,7 +10,11 @@ module.exports = {
       serif: ["Montserrat"],
       mono: ["Montserrat"],
     },
-    extend: {},
+    extend: {
+      colors: {
+        "App-orange": "#FF5B2E",
+      },
+    },
   },
   plugins: [],
 };

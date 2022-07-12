@@ -14,3 +14,13 @@
 .unactive {
   border-bottom: 2px solid white;
 }
+.filled {
+  position: relative;
+  background-image: linear-gradient(to top, #000 50%, #ff5b2e 50%);
+  background-size: 100% 200%;
+  background-position: top;
+  transition: background-position 0.5s ease-in-out;
+}
+.filled:hover {
+  background-position: bottom;
+}
