@@ -6,7 +6,7 @@ import { ProjectInMindBanner } from "../scr/components/organism/banners";
 import Form from "../scr/components/organism/form";
 import NumbersCard from "../scr/components/molecule/NumbersCard";
 import InspireBanner from "../scr/components/molecule/InspireBanner";
-import Button from '../scr/components/atom/button';
+import Button from "../scr/components/molecule/button";
 
 const Home: NextPage = () => {
   return (
@@ -180,7 +180,7 @@ const Home: NextPage = () => {
       {/* pink banner */}
       <ProjectInMindBanner />
       {/* floating right button */}
-      <Button />
+      <Button variant={"fixed"}>CONTACT US</Button>
     </div>
   );
 };
