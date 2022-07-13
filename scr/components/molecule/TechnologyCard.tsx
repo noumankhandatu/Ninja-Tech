@@ -1,11 +1,13 @@
 import React from "react";
 import AppFont from "../atom/AppFont";
 type TechoProps = {
-  items: {
-    title: string;
-    description: string;
-    img: string;
-  }[] | any;
+  items:
+    | {
+        title: string;
+        description: string;
+        img: string;
+      }[]
+    | any;
 };
 const TechnologyCard = ({ items }: TechoProps) => {
   const { title, description, img } = items;

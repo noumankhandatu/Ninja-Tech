@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import PortfolioCard from "../molecule/portfolioCard";
 import Button from "../molecule/button";
-
-const GreatPortfolio = () => {
+type PortfolioProps = {
+  // any for being time
+  data: any;
+};
+const GreatPortfolio = ({ data }: PortfolioProps) => {
   const TabsItems = [
     {
       title: "All",
@@ -22,6 +25,10 @@ const GreatPortfolio = () => {
     },
   ];
   const [activeBar, setActiveBar] = useState<number>(0);
+  const handleToggles = (id: number) => {
+    alert(id);
+    setActiveBar(id);
+  };
   return (
     <div className="text-center">
       <p className="text-[42px]  mb-4 font-light">Great Portfolio</p>
@@ -33,8 +40,10 @@ const GreatPortfolio = () => {
         {TabsItems.map((items, id) => {
           return (
             <p
-              onClick={() => {
-                setActiveBar(id);
+              onClick={(
+                e: React.MouseEvent<HTMLParagraphElement, MouseEvent>
+              ) => {
+                handleToggles(id);
               }}
               className={`${
                 items.id === activeBar ? "active text-App-orange" : "unactive"
@@ -46,8 +55,17 @@ const GreatPortfolio = () => {
         })}
       </div>
       <div>
-        <PortfolioCard image={"https://ninjatech.agency/wp-content/uploads/2021/12/Number_2-630x415.png"} title={"NUMBER 2 IS E-COMMERCE WEBSITE PROVIDING TOILET PAPERS."} description={"Number 2"} />
-        <PortfolioCard image={"https://ninjatech.agency/wp-content/uploads/2021/12/Click-Grow_1-630x415.png"} title={"GROW IN-DOOR PLANTS WITH CLICK & GROW."} description={"Click & Grow"} />
+        {data.map((items: any) => {
+          return (
+            <>
+              <PortfolioCard
+                image={items.image}
+                title={items.title}
+                description={items.description}
+              />
+            </>
+          );
+        })}
         <div className="flex justify-center pb-32 pt-20">
           <Button variant="alpha">View Projects</Button>
         </div>

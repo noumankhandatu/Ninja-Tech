@@ -9,47 +9,13 @@ import Button from "../scr/components/molecule/button";
 import AppFont from "../scr/components/atom/AppFont";
 import TechnologyCard from "../scr/components/molecule/TechnologyCard";
 import GreatPortfolio from "../scr/components/organism/greatPortfolio";
+import {
+  TechnologyCardData,
+  PortFolioServicePage,
+} from "../scr/components/atom/testingArrays";
 const Services = () => {
   const cssProps =
     "text-[16px] font-medium text-App-orange mr-8  cursor-pointer";
-  const TechnologyCardData = [
-    {
-      title: "Android      ",
-      description:
-        "NinjaTech is not new or naïve in this industry, with the skill-proven Android developers build your application with us.",
-      img: "https://ninjatech.agency/wp-content/uploads/2022/06/android-1.png",
-    },
-    {
-      title: "iOs",
-      description:
-        "We have a great team in iOS development; NinjaTech has adept 130+ projects with the iOS and still counting.",
-      img: "https://ninjatech.agency/wp-content/uploads/2022/06/apple-black-logo.png",
-    },
-    {
-      title: "Cross-platform",
-      description:
-        "It's the bridge between the two platforms to build your app, and making it available on different platforms is now possible with cross-platform technology.",
-      img: "https://ninjatech.agency/wp-content/uploads/2022/06/cross-platform.png",
-    },
-    {
-      title: "Front-end      ",
-      description:
-        "With the expert team of Front-end Developers, now you can make your requirement into reality.",
-      img: "https://ninjatech.agency/wp-content/uploads/2022/06/ux.png",
-    },
-    {
-      title: "Backend",
-      description:
-        "Our developers are proficient in developing the backend profile of your website solid and reliable.",
-      img: "https://ninjatech.agency/wp-content/uploads/2022/06/backend.png",
-    },
-    {
-      title: "Artificial Intelligence",
-      description:
-        "Get the leverage to accelerate data-driven decisions with Artificial Intelligence solutions.",
-      img: "https://ninjatech.agency/wp-content/uploads/2022/06/ai.png",
-    },
-  ];
   return (
     <div>
       <ExpectMoreBanner
@@ -284,7 +250,7 @@ const Services = () => {
       </Wrapper>
       {/* Great-Portfolio  ==>*/}
       <Wrapper contained>
-        <GreatPortfolio />
+        <GreatPortfolio data={PortFolioServicePage} />
       </Wrapper>
       <Form />
       <ProjectInMindBanner />
