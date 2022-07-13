@@ -24,3 +24,6 @@
 .filled:hover {
   background-position: bottom;
 }
+.ShadowBox:hover {
+  box-shadow: 0 3px 9px rgb(0 0 0 / 16%);
+}
