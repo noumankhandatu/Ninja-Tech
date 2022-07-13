@@ -176,7 +176,7 @@ const Home: NextPage = () => {
       {/* pink banner */}
       <ProjectInMindBanner />
       {/* floating right button */}
-      <Button variant={"fixed"}>CONTACT US</Button>
+     
     </div>
   );
 };
