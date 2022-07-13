@@ -7,6 +7,7 @@ import Form from "../scr/components/organism/form";
 import NumbersCard from "../scr/components/molecule/NumbersCard";
 import InspireBanner from "../scr/components/molecule/InspireBanner";
 import Button from "../scr/components/molecule/button";
+import ExpectMoreBanner from "../scr/components/organism/expectMoreBanner";
 
 const Home: NextPage = () => {
   return (
@@ -15,21 +16,14 @@ const Home: NextPage = () => {
         <title>Ninja Tech</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="relative">
-        <div className="bg-[url('/homebg.jpg')]  brightness-50 h-96 pt-96 pb-52 bg-no-repeat bg-center p-10"></div>
-        <Wrapper contained={true} className=" absolute top-32  text-white">
-          <p className="text-6xl pt-10 text-white">expect more </p>
-          <p className="text-6xl pb-10">from your agency</p>
-          <p className="text-2xl">
-            NinjaTech delivers more than just a web agency. You can expect some
-            very useful piece of advice every now awareness.
-          </p>
-          <p className="text-2xl">
-            and then to improve your digital presence and helps you make bold
-            statement by improving your brand
-          </p>
-        </Wrapper>
-      </div>
+      <ExpectMoreBanner
+        titleone="expect more "
+        titletwo="from your agency "
+        description="  NinjaTech delivers more than just a web agency. You can expect some
+            very useful piece of advice every now awareness. and then to improve
+            your digital presence and helps you make bold statement by improving
+            your brand"
+      />
       {/* small three boxes */}
       <Wrapper contained={true}>
         <div className="grid grid-cols-2  pt-20 pb-20">

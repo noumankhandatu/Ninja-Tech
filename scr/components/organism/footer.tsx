@@ -4,11 +4,17 @@ import Wrapper from "./wrapper";
 import AppFont from "../atom/AppFont";
 import { IoMdCall } from "react-icons/io";
 import { TbBuilding } from "react-icons/tb";
+import { BsFacebook } from "react-icons/bs";
+import { BsInstagram } from "react-icons/bs";
+import { VscGithub } from "react-icons/vsc";
+import { SiIndeed } from "react-icons/si";
 import Button from "../molecule/button";
 const Footer = () => {
+  const iconsProp =
+    "h-[42px] w-[42px] p-2 cursor-pointer rounded-full ease-in-out duration-700";
   return (
     <Wrapper contained={true} className="pt-10 pb-10 ">
-      <div className="grid lg:grid-cols-4  grid-cols-1 gap-10">
+      <div className="grid lg:grid-cols-4  grid-cols-1 gap-10 ">
         <div>
           <Image
             src="/logo.png"
@@ -20,6 +26,20 @@ const Footer = () => {
             Our Agency Provides Custom Software Development Solutions
           </AppFont>
           <Button variant="outlined">Get in touch</Button>
+          <div className="flex pt-10 pb-5">
+            <BsFacebook
+              className={`${iconsProp} hover:text-[#4970BF] hover:bg-white   bg-[#4970BF] border-2 border-[#4970BF]  text-white`}
+            />
+            <BsInstagram
+              className={` ${iconsProp} hover:text-[#FF4D62]  hover:bg-white  bg-[#FF4D62]  border-2 border-[#FF4D62]  ml-2  text-white`}
+            />
+            <VscGithub
+              className={` ${iconsProp} hover:text-black hover:bg-white   bg-black  border-2 border-[black] rounded-full  ml-2     text-white`}
+            />
+            <SiIndeed
+              className={` ${iconsProp} hover:text-[#63C9EB] bg-[#63C9EB] hover:bg-white   border-2 border-[#63C9EB] ml-2 text-white`}
+            />
+          </div>
         </div>
         <div>
           <p className="text-[25px] font-semibold mb-3">Company</p>
