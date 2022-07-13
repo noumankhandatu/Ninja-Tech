@@ -8,6 +8,7 @@ import DeploymentSevicesBanner from "../scr/components/organism/deploymentSevice
 import Button from "../scr/components/molecule/button";
 import AppFont from "../scr/components/atom/AppFont";
 import TechnologyCard from "../scr/components/molecule/TechnologyCard";
+import GreatPortfolio from "../scr/components/organism/greatPortfolio";
 const Services = () => {
   const cssProps =
     "text-[16px] font-medium text-App-orange mr-8  cursor-pointer";
@@ -173,7 +174,7 @@ const Services = () => {
         tagthree={"AWS Cloud Development"}
         tagfour={"Google Cloud Development        "}
       />
-      {/* pink baner */}
+      {/* pink baner ==>*/}
       <Wrapper full>
         <div className="bg-[#FFF5F3] ">
           <div className="gap-10  p-32  pb-10 flex justify-evenly items-center ">
@@ -247,7 +248,7 @@ const Services = () => {
           </div>
         </Wrapper>
       </Wrapper>
-      {/* Techonology Cards */}
+      {/* Techonology Cards ==>*/}
       <Wrapper contained className="p-32">
         <div className="grid grid-cols-[1fr,1.4fr] gap-10 items-center">
           <div>
@@ -280,6 +281,10 @@ const Services = () => {
             })}
           </div>
         </div>
+      </Wrapper>
+      {/* Great-Portfolio  ==>*/}
+      <Wrapper contained>
+        <GreatPortfolio />
       </Wrapper>
       <Form />
       <ProjectInMindBanner />
