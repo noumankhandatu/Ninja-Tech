@@ -17,7 +17,7 @@ const ExpectMoreBanner = ({
   return (
     <div>
       <div className="relative">
-        <div className="bg-[url('/homebg.jpg')]  brightness-50 h-96 pt-96 pb-52 bg-no-repeat bg-center p-10"></div>
+        <div className="bg-[url('/homebg.jpg')]   brightness-25 h-96 pt-96 pb-52 bg-no-repeat bg-center p-10"></div>
         <Wrapper contained={true} className=" absolute top-32  text-white">
           <p className="text-6xl pt-10 text-white">{titleone}</p>
           <p className="text-6xl pb-10">{titletwo}</p>

@@ -11,6 +11,10 @@ module.exports = {
       mono: ["Montserrat"],
     },
     extend: {
+      brightness: {
+        25: ".20",
+        175: "1.75",
+      },
       colors: {
         "App-orange": "#FF5B2E",
       },
