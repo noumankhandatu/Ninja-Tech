@@ -60,7 +60,7 @@ export const PortFolioServicePage = [
 
 export const TechnologyCardData = [
   {
-    title: "NUMBER 2 IS E-COMMERCE WEBSITE PROVIDING TOILET PAPERS.",
+    title: "Andriod",
     description:
       "NinjaTech is not new or naïve in this industry, with the skill-proven Android developers build your application with us.",
     img: "https://ninjatech.agency/wp-content/uploads/2022/06/android-1.png",
@@ -94,5 +94,81 @@ export const TechnologyCardData = [
     description:
       "Get the leverage to accelerate data-driven decisions with Artificial Intelligence solutions.",
     img: "https://ninjatech.agency/wp-content/uploads/2022/06/ai.png",
+  },
+];
+export const ValuesData = [
+  {
+    title: "EXCELLENCE    ",
+    img: "/valuePuposeImage/creativity.png",
+  },
+  {
+    title: "PARTNERSHIP    ",
+    img: "/valuePuposeImage/partnership.png",
+  },
+  {
+    title: "TEAMWORK    ",
+    img: "/valuePuposeImage/teamwork.png",
+  },
+  {
+    title: "CREATIVITY    ",
+    img: "/valuePuposeImage/creativity.png",
+  },
+  {
+    title: "DEPENDABILITY    ",
+    img: "/valuePuposeImage/dependability.png",
+  },
+  {
+    title: "FUN    ",
+    img: "/valuePuposeImage/fun.png",
+  },
+  {
+    title: "INTEGRITY    ",
+    img: "/valuePuposeImage/integrity.png",
+  },
+];
+
+export const ValuePurpCardData = [
+  {
+    title: "Excellence",
+    description:
+      "NinjaTech isn't naïve or novices on the lookout, we are in the business for the previous 10 years. With having a huge group of all-around experienced development groups and broad information on programming advances and their improvement administrations and arrangements we have conveyed incredible outcomes. We have executed more than 1000 projects. Also, leading in the industry with an onboard team of 200+ experts and certified team members.",
+    img: "https://ninjatech.agency/wp-content/uploads/2022/06/exellence-img.png",
+  },
+
+  {
+    title: "Partnership",
+    description:
+      "Once you start your journey with NinjaTech, you will be a part of our family. We not only focus to complete the work but also to build a healthy and thoughtful relation with you. We will assure you to fulfill your dream project and magnify the brand quality of your business. Even after completing the project work, we will take the responsibility to serve you our solution services for up to three months.",
+    img: "https://ninjatech.agency/wp-content/uploads/2022/06/partnership-img.png",
+  },
+  {
+    title: "Teamwork",
+    description:
+      "NinjaTech follows the work process with an exceptional team of experienced & certified developers, designers, and associate managers for handling the client’s requirement seamlessly. Once the client starts sharing the requirement the whole team will be part of the project by keeping transparent and clear communication with the client. At Ninja, all the team members are professional and supportive of each other. They always show team spirit while working and take responsibility for the company’s growth.",
+    img: "https://ninjatech.agency/wp-content/uploads/2022/06/teamwork-img.png",
+  },
+  {
+    title: "Creativity",
+    description:
+      "Where might we be without creativity? We fear to think! As far as we might be concerned, being innovative is obviously about huge thoughts, a creative mind, and inventiveness, but at the same time, it's tied in with being insightful, clever, and discovering arrangements. In any event, with regards to the more specialized side of what we do every day, we value infusing development and innovativeness into all that we do.",
+    img: "https://ninjatech.agency/wp-content/uploads/2022/06/creativity-img.png",
+  },
+  {
+    title: "Dependability",
+    description:
+      "You can depend on NinjaTech when it’s come to fulfill your requirements. With a top-notch team of developers and designers, we will make sure you will get the best output from our services. We need to be your full assistance organization, your accomplice, and key factor to your prosperity. We are an outcome-driven inventive computerized office that hopes to work with you past the conventional plan and improvement organization relationship, turning into an accomplice to the organizations and organizations we work with.",
+    img: "https://ninjatech.agency/wp-content/uploads/2022/06/dependability-img.png",
+  },
+  {
+    title: "Fun",
+    description:
+      "The fun stuff hits hard at NinjaTech, we at Ninja enjoy the work atmosphere as it is not stressful but helpful, supportive, and positive approach. We celebrate each employee’s birthday, festivals, our annual Ninja day and every month one dine out with all employees. It helps us a lot to build a good professional relationship with each other.    ",
+    img: "https://ninjatech.agency/wp-content/uploads/2022/06/fun-img.png",
+  },
+  {
+    title: "Integrity",
+    description:
+      "Straightforwardness and great correspondence are at the focal point of how we plan, carry out and report on the crusade movement. Imperative to both how we administration our customers and how our group works inside, we accept that genuineness and respectability are basic for progress.    ",
+    img: "https://ninjatech.agency/wp-content/uploads/2022/06/integrity-img.png",
   },
 ];

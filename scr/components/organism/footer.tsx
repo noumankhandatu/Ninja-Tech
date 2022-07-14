@@ -5,7 +5,7 @@ import AppFont from "../atom/AppFont";
 import { IoMdCall } from "react-icons/io";
 import { TbBuilding } from "react-icons/tb";
 import { BsFacebook } from "react-icons/bs";
-import { BsInstagram } from "react-icons/bs";
+import { AiFillInstagram } from "react-icons/ai";
 import { VscGithub } from "react-icons/vsc";
 import { SiIndeed } from "react-icons/si";
 import Button from "../molecule/button";
@@ -30,7 +30,7 @@ const Footer = () => {
             <BsFacebook
               className={`${iconsProp} hover:text-[#4970BF] hover:bg-white   bg-[#4970BF] border-2 border-[#4970BF]  text-white`}
             />
-            <BsInstagram
+            <AiFillInstagram
               className={` ${iconsProp} hover:text-[#FF4D62]  hover:bg-white  bg-[#FF4D62]  border-2 border-[#FF4D62]  ml-2  text-white`}
             />
             <VscGithub

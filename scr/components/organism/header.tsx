@@ -4,7 +4,7 @@ import Wrapper from "./wrapper";
 import Link from "next/link";
 import Button from "../molecule/button";
 const Header = () => {
-  const [activeLink, setActiveLink] = useState<number>(0);
+  const [activeLink, setActiveLink] = useState<number>(8);
   const headerEle = [
     {
       title: "About ninja",
