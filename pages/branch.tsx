@@ -3,6 +3,8 @@ import { ProjectInMindBanner } from "../scr/components/organism/banners";
 import Form from "../scr/components/organism/form";
 import GreatPortfolio from "../scr/components/organism/greatPortfolio";
 import { PortFolioServicePage } from "../scr/components/atom/testingArrays";
+// import BranchCard from "../src/components/molecules/brancdCard.tsx";
+import BrandCard from "../scr/components/molecule/brandCard";
 const Branch = () => {
   return (
     <div>
@@ -34,7 +36,7 @@ const Branch = () => {
           </div>
         </Wrapper>
       </div>
-      {/* creator div */}
+      {/* creator div =>*/}
       <div className="pt-20 pb-40">
         <Wrapper contained>
           <div className="grid grid-cols-2 gap-20 items-center">
@@ -66,7 +68,65 @@ const Branch = () => {
           </div>
         </Wrapper>
       </div>
-      {/* portfolio */}
+      {/* Branch => */}
+      <div className="bg-[#F5F5F5] pt-20 pb-40">
+        <Wrapper contained>
+          <p className="font-light text-[42px] text-center">
+            We help Brands with
+          </p>
+          <p className="text-[18px] text-center mt-4">
+            We are here with our services which will help to enhance your brand
+            identity and make your business more <br /> profitable and
+            captivating.
+          </p>
+          {/* Cards Rendered */}
+          <div className="grid grid-cols-[1.6fr,1fr] gap-10">
+            <BrandCard
+              btnVariant="primary"
+              title={"Software Development:"}
+              description={
+                "We foster custom programming, commonly for set up organizations hoping to work on their inside framework or to take software items to advertise."
+              }
+              className={"bg-white"}
+            />
+            <BrandCard
+              btnVariant="primary"
+              flexer={true}
+              btnClass="border border-black"
+              title={"Web-App Development:"}
+              description={
+                "Our web application development group has an abundance of full-stack skills in conveying answers for financed new companies and venture organizations."
+              }
+              className={"bg-App-orange text-center text-white"}
+            />
+          </div>
+          {/* second grid of cards */}
+          <div className="grid grid-cols-[1fr,1fr] gap-10">
+            <BrandCard
+              btnVariant="contained"
+              flexer={true}
+              btnClass=" filled"
+              title={"Mobile App Development:"}
+              description={
+                "We have a broad ability in creating customized versatile mobile applications for a large number of enterprises and organizations."
+              }
+              className={"bg-[#091037] text-center text-white"}
+            />
+            <BrandCard
+             btnVariant="contained"
+              flexer={true}
+              btnClass=" filled"
+              title={"UI/UX Design"}
+              description={
+                "Our Design and UX group make consistent, client-driven plans that feature your image and supercharge your profit. We'll cooperate to make the ideal plan that meets your brief, yet ensures your site remains simple to oversee.                "
+              }
+              className={"text-center text-white"}
+              bgImg="https://ninjatech.agency/wp-content/themes/ninja/assets/images/brand/nature.png"
+            />
+          </div>
+        </Wrapper>
+      </div>
+      {/* portfolio =>*/}
       <Wrapper contained>
         <GreatPortfolio data={PortFolioServicePage} />
       </Wrapper>
