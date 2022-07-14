@@ -113,7 +113,7 @@ const Branch = () => {
               className={"bg-[#091037] text-center text-white"}
             />
             <BrandCard
-             btnVariant="contained"
+              btnVariant="contained"
               flexer={true}
               btnClass=" filled"
               title={"UI/UX Design"}
