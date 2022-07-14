@@ -1,13 +1,15 @@
 import React from "react";
+import Link from "next/link";
 
 type ButtonProps = {
   variant: string;
   children: React.ReactNode;
   className?: string;
   endIcon?: React.ReactNode | any;
+  path: string;
 };
 
-const Button = ({ variant, className, children, endIcon }: ButtonProps) => {
+const Button = ({ variant, className, children, endIcon,path }: ButtonProps) => {
   const fixed =
     "bg-orange-600 pt-3 pb-3 pl-8 pr-8 text-white w-[174px]  h-[44px]  top-80 align-middle -right-[60px]  fixed -rotate-90";
   const primary =
@@ -25,7 +27,7 @@ const Button = ({ variant, className, children, endIcon }: ButtonProps) => {
     "w-[280px] bg-App-orange text-[25px]  text-center  py-[48px] h-[81px] text-white rounded filled";
   const danger = "bg-[#FFE3DD] pt-3 pb-3 pl-8 pr-8 text-black ";
   return (
-    <div>
+    <Link href={path ? path : "/"}>
       <div
         className={`${variant === "fixed" ? fixed : null}   ${
           variant === "primary" ? primary : null
@@ -40,7 +42,7 @@ const Button = ({ variant, className, children, endIcon }: ButtonProps) => {
         {children}
         {endIcon && <span className="ml-2"> {endIcon}</span>}
       </div>
-    </div>
+    </Link>
   );
 };
 

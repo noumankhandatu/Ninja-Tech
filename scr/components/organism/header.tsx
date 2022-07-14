@@ -58,7 +58,9 @@ const Header = () => {
           })}
         </div>
       </div>
-      <Button variant="primary">Lets Talk</Button>
+      <Button variant="primary" path="/services">
+        Lets Talk
+      </Button>
     </Wrapper>
   );
 };

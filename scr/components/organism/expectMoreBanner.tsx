@@ -12,7 +12,7 @@ const ExpectMoreBanner = ({
   titleone,
   titletwo,
   description,
-  button
+  button,
 }: ExpectMoreBannerProps) => {
   return (
     <div>
@@ -23,7 +23,12 @@ const ExpectMoreBanner = ({
           <p className="text-6xl pb-10">{titletwo}</p>
           <p className="text-[18px] ">{description}</p>
           {button && (
-            <Button variant="contained" className="rounded mt-10 filled" endIcon={<AiOutlineRight />}>
+            <Button
+              path="/services"
+              variant="contained"
+              className="rounded mt-10 filled"
+              endIcon={<AiOutlineRight />}
+            >
               Get a Quote
             </Button>
           )}

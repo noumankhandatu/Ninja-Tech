@@ -2,8 +2,9 @@ import React from "react";
 import Wrapper from "./wrapper";
 import Button from "../molecule/button";
 import { AiOutlineRight } from "react-icons/ai";
-import { BsSkype } from 'react-icons/bs';
-import { IoIosMail } from 'react-icons/io';
+import { BsSkype } from "react-icons/bs";
+import { IoIosMail } from "react-icons/io";
+import Link from "next/link";
 export const ProjectInMindBanner = () => {
   return (
     <>
@@ -14,11 +15,22 @@ export const ProjectInMindBanner = () => {
               Do you have similar project in your mind?
             </p>
             <p className="text-[20px]  flex items-center">
-              Send us your requirements on <BsSkype className="ml-2 mr-3"/> <a href="" className="underline mr-2 ml-2 decoration-2">NinjaTech </a> <b>or</b>  <IoIosMail className="ml-2 mr-2"/> <a href="" className="underline decoration-2">info@ninjatech.agency</a>
+              Send us your requirements on <BsSkype className="ml-2 mr-3" />{" "}
+              <a href="" className="underline mr-2 ml-2 decoration-2">
+                NinjaTech{" "}
+              </a>{" "}
+              <b>or</b> <IoIosMail className="ml-2 mr-2" />{" "}
+              <a href="" className="underline decoration-2">
+                info@ninjatech.agency
+              </a>
             </p>
           </div>
           <div>
-            <Button variant="alpha" endIcon={<AiOutlineRight />}>
+            <Button
+              path="/contact"
+              variant="alpha"
+              endIcon={<AiOutlineRight />}
+            >
               Contact Us
             </Button>
           </div>

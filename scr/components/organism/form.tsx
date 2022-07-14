@@ -17,7 +17,7 @@ const Form = () => {
       </div>
       <TextArea />
        <div className="flex pt-10 justify-center">
-       <Button variant="secondary">Submit Now</Button>
+       <Button path="/" variant="secondary">Submit Now</Button>
        </div>
     </Wrapper>
   );

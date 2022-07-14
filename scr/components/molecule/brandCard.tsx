@@ -33,7 +33,7 @@ const BrandCard = ({
       <div>
         {flexer ? (
           <div className="flex justify-center">
-            <Button
+            <Button  path="/services"
               variant={`${btnVariant}`}
               className={`${btnClass}  rounded-[10px]`}
             >
@@ -42,7 +42,7 @@ const BrandCard = ({
           </div>
         ) : (
           <>
-            <Button variant={`${btnVariant}`} className={`rounded-[10px]`}>
+            <Button  path="/services" variant={`${btnVariant}`} className={`rounded-[10px]`}>
               Read More
             </Button>
           </>

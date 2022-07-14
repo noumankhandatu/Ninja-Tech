@@ -165,7 +165,7 @@ const Home: NextPage = () => {
             design, or web development, we want to hear from you!
           </p>
           <div className="flex mt-12 justify-center">
-            <Button variant="contained" className="filled">
+            <Button path="/contact" variant="contained" className="filled">
               Join Our Team !
             </Button>
           </div>

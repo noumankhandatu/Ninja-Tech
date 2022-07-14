@@ -25,7 +25,9 @@ const Footer = () => {
           <AppFont className="mb-2 mt-3">
             Our Agency Provides Custom Software Development Solutions
           </AppFont>
-          <Button variant="outlined">Get in touch</Button>
+          <Button path="/contact" variant="outlined">
+            Get in touch
+          </Button>
           <div className="flex pt-10 pb-5">
             <BsFacebook
               className={`${iconsProp} hover:text-[#4970BF] hover:bg-white   bg-[#4970BF] border-2 border-[#4970BF]  text-white`}
