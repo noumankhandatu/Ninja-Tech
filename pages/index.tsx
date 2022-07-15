@@ -11,6 +11,8 @@ import ExpectMoreBanner from "../scr/components/organism/expectMoreBanner";
 import SmallCard from "../scr/components/molecule/smallCard";
 import ItemCarousel from "../scr/components/organism/carousel";
 import AppFont from "../scr/components/atom/AppFont";
+import OurBranchCard from "../scr/components/molecule/OurBrandCard";
+import { OurBrandArray } from "../scr/components/atom/testingArrays";
 
 const Home: NextPage = () => {
   const cssProps = "text-[24px] font-bold  mr-8  cursor-pointer";
@@ -27,11 +29,21 @@ const Home: NextPage = () => {
           Centring the market through our image esteems and advantaging each
           development administration by
         </p>
-        <p className="text-[18px] ">
+        <p className="text-[18px] mb-20">
           effectively exhibiting resources for your improvement and encouraging
           your business.
         </p>
+        <div className="grid grid-cols-3 gap-8 ">
+          {OurBrandArray.map((items) => {
+            return (
+              <div>
+                <OurBranchCard items={items} />
+              </div>
+            );
+          })}
+        </div>
       </Wrapper>
+      {/* Get an opportunity */}
       <div className="p-20 bg-[#FFF5F3]">
         <Wrapper contained>
           <div>

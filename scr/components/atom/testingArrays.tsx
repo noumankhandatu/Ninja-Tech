@@ -172,3 +172,43 @@ export const ValuePurpCardData = [
     img: "https://ninjatech.agency/wp-content/uploads/2022/06/integrity-img.png",
   },
 ];
+
+export const OurBrandArray = [
+  {
+    title: "Magento Ninja",
+    description:
+      "Magento Ninja cluster has extensive involvement with creating a host of e-commerce business utilities for numerous ventures.",
+    img: "https://ninjatech.agency/wp-content/themes/ninja/assets/images/brand-img-1.svg",
+  },
+
+  {
+    title: "The WordPress Ninjas",
+    description:
+      "WordPress Ninja is offering its administrations in WordPress development with vital understanding and dispatching useful outcomes to their customers.",
+    img: "https://ninjatech.agency/wp-content/themes/ninja/assets/images/brand-img-2.svg",
+  },
+  {
+    title: "Mobiapp Ninjas",
+    description:
+      "MobiAppNinjas is a team of dynamic mobile apps developers who drives the market with their high-end tailored mobile apps services.",
+    img: "https://ninjatech.agency/wp-content/themes/ninja/assets/images/brand-img-3.svg",
+  },
+  {
+    title: "React Ninjas",
+    description:
+      "At React Ninjas, we have a vast team of experienced developers & designers followed by a great management team.",
+    img: "https://ninjatech.agency/wp-content/themes/ninja/assets/images/brand-img-3.svg",
+  },
+  {
+    title: "Hiretech Ninjas",
+    description:
+      "Hire Tech Ninja is paramount in the Software Development Industry with 11 years for its desirable services and solutions.",
+    img: "https://ninjatech.agency/wp-content/themes/ninja/assets/images/hirtechninjas.png",
+  },
+  {
+    title: "Best Remote Team",
+    description:
+      " We are Best Remote Team, a large group of developers & designers. Build your remote team with us and get talents on board.",
+    img: "https://ninjatech.agency/wp-content/themes/ninja/assets/images/bestremoteteam.svg",
+  },
+];
