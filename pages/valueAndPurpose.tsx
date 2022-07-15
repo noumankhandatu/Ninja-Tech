@@ -10,8 +10,10 @@ import {
   ValuePurpCardData,
 } from "../scr/components/atom/testingArrays";
 const ValueAndPurpose = () => {
-  const [clx, setClx] = useState<string>("");
+  const [clx, setClx] = useState<any>(null);
 
+  function helo() {}
+  helo();
   return (
     <div>
       <div className="relative text-center ">
@@ -30,7 +32,7 @@ const ValueAndPurpose = () => {
       </div>
       {/* values and purpose  =>*/}
       <div className="relative text-center">
-        <div className="bg-[url('/value-banner.png')]   brightness-25    h-[500px]  bg-no-repeat  bg-cover bg-center"></div>
+        <div className="bg-[url('/value-banner.png')] bg-[#F5F5F5] h-[500px] bg-no-repeat bg-cover bg-center"></div>
         <Wrapper contained={true} className=" absolute top-32  text-white ">
           <p className="text-[42px] mb-8 text-black">Values and Purpose</p>
           <div className="grid grid-cols-7 gap-16 text-center  items-center  ">
@@ -48,19 +50,12 @@ const ValueAndPurpose = () => {
         </Wrapper>
         {/* All Cards */}
         <Wrapper contained className="">
-          <div
-            className={`grid grid-cols-2 gap-10 relative -top-20 ${
-              clx ? clx : null
-            }`}
-          >
+          <div className={`grid grid-cols-2 gap-10 relative -top-20 `}>
             {ValuePurpCardData?.map((items, id) => {
-              // {
-              //   id > 1 && id === 5 ? setClx("grid-cols-1"): null;
-              // }
               return (
-                <>
+                <div>
                   <ValuePurposeCard items={items} />
-                </>
+                </div>
               );
             })}
           </div>
