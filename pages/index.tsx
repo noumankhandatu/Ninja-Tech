@@ -1,18 +1,13 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
 import Wrapper from "../scr/components/organism/wrapper";
 import { ProjectInMindBanner } from "../scr/components/organism/banners";
-import Form from "../scr/components/organism/form";
-import NumbersCard from "../scr/components/molecule/NumbersCard";
-import InspireBanner from "../scr/components/molecule/InspireBanner";
 import Button from "../scr/components/molecule/button";
-import ExpectMoreBanner from "../scr/components/organism/expectMoreBanner";
-import SmallCard from "../scr/components/molecule/smallCard";
 import ItemCarousel from "../scr/components/organism/carousel";
 import AppFont from "../scr/components/atom/AppFont";
 import OurBranchCard from "../scr/components/molecule/OurBrandCard";
 import { OurBrandArray } from "../scr/components/atom/testingArrays";
+import { BsArrowRight } from "react-icons/bs";
 
 const Home: NextPage = () => {
   const cssProps = "text-[24px] font-bold  mr-8  cursor-pointer";
@@ -22,6 +17,53 @@ const Home: NextPage = () => {
         <title>Ninja Tech</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      {/* Banner */}
+      <Wrapper contained className={"mt-2"}>
+        <div className="relative">
+          <img
+            src="https://ninjatech.agency/wp-content/themes/ninja/assets/images/about-banner.png"
+            alt=""
+            width={"100%"}
+          />
+          <div className="w-[400px] text-[29px] text-white absolute right-5 top-10 bg-App-orange p-10">
+            <p className="font-semibold ">NINJATECH CAN</p>
+            <p className="font-thin leading-relaxed	">
+              ACCOMPLISH YOUR DREAM PROJECT <br />
+              <b className="font-semibold leading-relaxed	">& </b>ENHANCE YOUR
+            </p>
+            <p className="font-semibold leading-relaxed	">
+              BRAND QUALITY BUSINESS.
+            </p>
+            <div className="flex items-center mt-10">
+              <AppFont className="leading-relaxed	">
+                KNOW HOW WE DO IT
+              </AppFont>
+              <BsArrowRight className="ml-4" />
+            </div>
+          </div>
+        </div>
+        {/* grid 4 */}
+        <div className="grid grid-cols-4 justify-around text-center  bg-[#F5F5F5] p-5">
+          <div>
+            <p className="font-semibold text-[55px]">2</p>
+            <p className="text-[24px] font-medium">offices</p>
+          </div>
+          <div>
+            <p className="font-semibold text-[55px]">11+</p>
+            <p className="text-[24px] font-medium">
+              years of expertise across the industry
+            </p>
+          </div>
+          <div>
+            <p className="font-semibold text-[55px]">275+</p>
+            <p className="text-[24px] font-medium">clients served</p>
+          </div>
+          <div>
+            <p className="font-semibold text-[55px]">200+</p>
+            <p className="text-[24px] font-medium">specialists on board</p>
+          </div>
+        </div>
+      </Wrapper>
       {/* Brand Cards Rendering */}
       <Wrapper contained className="text-center p-20">
         <p className="text-[42px] font-medium">Our Brand</p>
