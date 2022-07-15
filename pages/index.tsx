@@ -154,7 +154,7 @@ const Home: NextPage = () => {
           <p className="text-[22px]   font-semibold active text-App-orange">
             Mobile
           </p>
-          <p className="text-[22px] ml-20  font-semibold #2A2A2A text-[#2A2A2A]">
+          <p className="text-[22px] ml-20  font-semibold #2A2A2A text-[#2A2A2A] ">
             Front End
           </p>
           <p className="text-[22px] ml-20 font-semibold #2A2A2A text-[#2A2A2A]">
@@ -177,8 +177,12 @@ const Home: NextPage = () => {
           Testimonials & Clients
         </p>
         <Wrapper contained={true} className="mt-20 mb-40">
-          <TestimonialCarousel />
-          <ItemCarousel />
+          <div>
+            <TestimonialCarousel />
+          </div>
+          <div className="mt-20">
+            <ItemCarousel />
+          </div>
         </Wrapper>
       </div>
       {/* contact banner */}
