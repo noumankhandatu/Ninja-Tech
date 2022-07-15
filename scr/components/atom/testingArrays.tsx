@@ -212,3 +212,38 @@ export const OurBrandArray = [
     img: "https://ninjatech.agency/wp-content/themes/ninja/assets/images/bestremoteteam.svg",
   },
 ];
+
+export const OurTechnologyCardData = [
+  {
+    title: "iOS",
+    img: "https://ninjatech.agency/wp-content/themes/ninja/assets/images/iOS.png",
+  },
+  {
+    title: "Android",
+    img: "https://ninjatech.agency/wp-content/themes/ninja/assets/images/Android.png",
+  },
+  {
+    title: "Flutter",
+    img: "https://ninjatech.agency/wp-content/themes/ninja/assets/images/Flutter.png",
+  },
+  {
+    title: "React Native",
+    img: "https://ninjatech.agency/wp-content/themes/ninja/assets/images/ReactNative.png",
+  },
+  {
+    title: "IONIC",
+    img: "https://ninjatech.agency/wp-content/themes/ninja/assets/images/ionic-icon.png",
+  },
+  {
+    title: "PhoneGap",
+    img: "https://ninjatech.agency/wp-content/themes/ninja/assets/images/phonegap-icon.png",
+  },
+  {
+    title: "Kotlin",
+    img: "https://ninjatech.agency/wp-content/themes/ninja/assets/images/Kotlin.png",
+  },
+  {
+    title: "Swift",
+    img: "https://ninjatech.agency/wp-content/themes/ninja/assets/images/swift-icon.png",
+  },
+];

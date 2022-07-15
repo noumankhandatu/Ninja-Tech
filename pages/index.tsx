@@ -6,8 +6,13 @@ import Button from "../scr/components/molecule/button";
 import ItemCarousel from "../scr/components/organism/carousel";
 import AppFont from "../scr/components/atom/AppFont";
 import OurBranchCard from "../scr/components/molecule/OurBrandCard";
-import { OurBrandArray } from "../scr/components/atom/testingArrays";
+import {
+  OurBrandArray,
+  OurTechnologyCardData,
+} from "../scr/components/atom/testingArrays";
 import { BsArrowRight } from "react-icons/bs";
+import Link from "next/link";
+import OurTechnologyCard from "../scr/components/molecule/OurTechnologyCard";
 
 const Home: NextPage = () => {
   const cssProps = "text-[24px] font-bold  mr-8  cursor-pointer";
@@ -34,12 +39,12 @@ const Home: NextPage = () => {
             <p className="font-semibold leading-relaxed	">
               BRAND QUALITY BUSINESS.
             </p>
-            <div className="flex items-center mt-10">
-              <AppFont className="leading-relaxed	">
-                KNOW HOW WE DO IT
-              </AppFont>
-              <BsArrowRight className="ml-4" />
-            </div>
+            <Link href="services">
+              <div className="flex items-center mt-10 cursor-pointer">
+                <AppFont className="leading-relaxed	">KNOW HOW WE DO IT</AppFont>
+                <BsArrowRight className="ml-4" />
+              </div>
+            </Link>
           </div>
         </div>
         {/* grid 4 */}
@@ -138,6 +143,32 @@ const Home: NextPage = () => {
           </div>
         </Wrapper>
       </div>
+      {/* TechnologyCards */}
+      <Wrapper contained className="p-20">
+        <p className="text-[42px] text-center font-medium text-[#2A2A2A]">
+          Technologies we work with
+        </p>
+        <div className="flex justify-center mt-16">
+          <p className="text-[22px]   font-semibold active text-App-orange">
+            Mobile
+          </p>
+          <p className="text-[22px] ml-20  font-semibold #2A2A2A text-[#2A2A2A]">
+            Front End
+          </p>
+          <p className="text-[22px] ml-20 font-semibold #2A2A2A text-[#2A2A2A]">
+            Platforms
+          </p>
+          <p className="text-[22px] ml-20 font-semibold #2A2A2A text-[#2A2A2A]">
+            CMS
+          </p>
+        </div>
+        <hr className="mb-10" />
+        <div className="grid grid-cols-6 gap-4">
+          {OurTechnologyCardData?.map((items) => {
+            return <OurTechnologyCard items={items} />;
+          })}
+        </div>
+      </Wrapper>
       {/* carousel  =>*/}
       <Wrapper contained={true} className="mt-20 mb-40">
         <ItemCarousel />
