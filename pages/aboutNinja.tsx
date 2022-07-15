@@ -49,7 +49,10 @@ const AboutNinja: NextPage = () => {
             </p>
             <div className="flex gap-10 justify-between mt-20">
               <SmallCard numbers={"2"} tag={"offices"} />
-              <SmallCard numbers={"11+"} tag={"years of expertise across the industry"} />
+              <SmallCard
+                numbers={"11+"}
+                tag={"years of expertise across the industry"}
+              />
               <SmallCard numbers={"275+"} tag={"clients served"} />
             </div>
           </div>
