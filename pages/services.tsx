@@ -147,8 +147,9 @@ const Services = () => {
             tagfour={"Google Cloud Development        "}
           />
         </div>
-        <div>
-          <div className="border p-5 border-App-orange rounded-xl w-[325px] h-[200px]">
+        {/* Sticky Div */}
+        <div className="">
+          <div className="border p-5 border-App-orange rounded-xl sticky top-10  w-[325px] h-[200px]">
             <AppFont className="leading-loose text-[#495057]">
               Web & Mobile Development
             </AppFont>
