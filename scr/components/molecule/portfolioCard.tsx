@@ -15,7 +15,7 @@ const PortfolioCard = ({ image, title, description }: CardTypes) => {
         <p className="text-[18px] mb-4">{title}</p>
         <p className={"text-[29px] mb-4 font-bold text-left"}>{description}</p>
         <div>
-          <Button variant="danger">VIEW PROJECTS</Button>
+          <Button path="/portfolio" variant="danger">VIEW PROJECTS</Button>
         </div>
       </div>
     </div>

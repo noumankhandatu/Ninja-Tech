@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import PortfolioCard from "../molecule/portfolioCard";
 import Button from "../molecule/button";
+import Link from "next/link";
 type PortfolioProps = {
   // any for being time
   data: any;
@@ -67,7 +68,9 @@ const GreatPortfolio = ({ data }: PortfolioProps) => {
           );
         })}
         <div className="flex justify-center pb-32 pt-20">
-          <Button variant="alpha">View Projects</Button>
+          <Button path="/portfolio" variant="alpha">
+            View Projects
+          </Button>
         </div>
       </div>
     </div>

@@ -170,6 +170,7 @@ const Services = () => {
           <div className="flex justify-center pb-20 pt-10">
             <Button
               variant="contained"
+              path="/services"
               className="rounded filled"
               endIcon={<AiOutlineRight />}
             >
@@ -235,6 +236,7 @@ const Services = () => {
             </AppFont>
             <Button
               variant="contained"
+              path="/branch"
               endIcon={<AiOutlineRight />}
               className="filled mt-12 rounded"
             >
