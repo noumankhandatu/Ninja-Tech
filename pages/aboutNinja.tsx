@@ -4,11 +4,16 @@ import Image from "next/image";
 import Wrapper from "../scr/components/organism/wrapper";
 import { ProjectInMindBanner } from "../scr/components/organism/banners";
 import Form from "../scr/components/organism/form";
-import NumbersCard from "../scr/components/molecule/NumbersCard";
+import ArtCard from "../scr/components/molecule/ArtCard";
 import InspireBanner from "../scr/components/molecule/InspireBanner";
 import Button from "../scr/components/molecule/button";
 import ExpectMoreBanner from "../scr/components/organism/expectMoreBanner";
 import SmallCard from "../scr/components/molecule/smallCard";
+import AppFont from "../scr/components/atom/AppFont";
+import {
+  ArtCardData,
+  AbsArtCardData,
+} from "../scr/components/atom/testingArrays";
 
 const AboutNinja: NextPage = () => {
   return (
@@ -58,33 +63,37 @@ const AboutNinja: NextPage = () => {
           </div>
         </div>
       </Wrapper>
+      {/* pos absolute cards */}
       <div
         style={{ backgroundColor: "#F5F5F5" }}
         className="pt-20 relative pb-72"
       >
         <Wrapper contained={true}>
-          <div className="grid grid-cols-[1fr,2fr]">
+          <div className="grid grid-cols-[1fr,2fr] items-center">
             <div>
-              <p className="text-4xl">CAPABILITIES</p>
-              <p className="text-3xl font-bold">Art In Branding.</p>
+              <p className="text-[42px] font-light">CAPABILITIES</p>
+              <p className="text-[42px] font-semibold">Art In Branding.</p>
             </div>
             <div>
-              <p>
+              <AppFont className="leading-loose tracking-wide font-[500]		text-[#2A2A2A]		">
                 Our cheerful spot is in taking care of complicated issues,
                 conveying substantial advanced change to make the most worth. We
                 have our technique, design, and development groups function as
                 an augmentation of our customers' inside terms significantly to
                 enhance the client’s experience and deliver the worth to their
                 brand.
-              </p>
+              </AppFont>
             </div>
           </div>
         </Wrapper>
-        <div className="grid grid-cols-3 absolute top-64 gap-10 pt-10 pl-20 pr-20">
-          <NumbersCard />
-          <NumbersCard />
-          <NumbersCard />
-        </div>
+        <Wrapper
+          contained
+          className="grid grid-cols-3 absolute top-64 gap-10 pt-10 pl-20 pr-20"
+        >
+          {AbsArtCardData?.map((items) => {
+            return <ArtCard items={items} />;
+          })}
+        </Wrapper>
       </div>
       <div className="pt-72 pb-32">
         <Wrapper contained={true}>
@@ -120,7 +129,7 @@ const AboutNinja: NextPage = () => {
         </Wrapper>
       </div>
       {/* bg-gradient */}
-      <div className="bg-gradient-to-t from-cyan-100 to-blue-300 pt-20 pb-20">
+      <div className=" bg-gradient-to-t from-[#fffbef] to-[#e2f3ff] pt-20 pb-20">
         <Wrapper contained={true}>
           <p className="text-3xl pt-4 pb-2 text-center">
             Every project is different, but our methodology remains the same.
@@ -130,12 +139,9 @@ const AboutNinja: NextPage = () => {
             to the process we have mentioned below:
           </p>
           <div className="grid grid-cols-3 gap-10 pt-10">
-            <NumbersCard />
-            <NumbersCard />
-            <NumbersCard />
-            <NumbersCard />
-            <NumbersCard />
-            <NumbersCard />
+            {ArtCardData?.map((items) => {
+              return <ArtCard items={items} />;
+            })}
           </div>
         </Wrapper>
       </div>
