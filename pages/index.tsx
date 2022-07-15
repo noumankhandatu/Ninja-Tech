@@ -13,6 +13,8 @@ import {
 import { BsArrowRight } from "react-icons/bs";
 import Link from "next/link";
 import OurTechnologyCard from "../scr/components/molecule/OurTechnologyCard";
+import TestimonialCard from "../scr/components/molecule/testimonialCard";
+import TestimonialCarousel from "../scr/components/organism/testimonialCarousel";
 
 const Home: NextPage = () => {
   const cssProps = "text-[24px] font-bold  mr-8  cursor-pointer";
@@ -170,9 +172,15 @@ const Home: NextPage = () => {
         </div>
       </Wrapper>
       {/* carousel  =>*/}
-      <Wrapper contained={true} className="mt-20 mb-40">
-        <ItemCarousel />
-      </Wrapper>
+      <div className="bg-[#FFF5F3] pt-20 pb-20">
+        <p className="font-medium text-center text-[42px] mb-20 mt-20">
+          Testimonials & Clients
+        </p>
+        <Wrapper contained={true} className="mt-20 mb-40">
+          <TestimonialCarousel />
+          <ItemCarousel />
+        </Wrapper>
+      </div>
       {/* contact banner */}
       <ProjectInMindBanner />
     </div>
