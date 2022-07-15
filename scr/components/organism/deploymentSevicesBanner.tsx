@@ -23,9 +23,9 @@ const DeploymentSevicesBanner = ({
     "text-[16px] font-medium text-App-orange mr-8  cursor-pointer";
   return (
     <div>
-      <div className="mt-20 mb-20 ">
-        <div className="grid grid-cols-[0.5fr,1fr,0.1fr] gap-40 items-center">
-          <div className="relative bg-[#F5F5F5] h-[450px] w-[500px] p-10 ">
+      <div className="">
+        <div className="grid grid-cols-[0.5fr,1fr] gap-40 items-center">
+          <div className="relative bg-[#F5F5F5] h-[450px] w-[400px] p-10 ">
             <img className="absolute -right-32" src={image} alt="images" />
           </div>
           <div>
