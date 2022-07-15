@@ -247,3 +247,52 @@ export const OurTechnologyCardData = [
     img: "https://ninjatech.agency/wp-content/themes/ninja/assets/images/swift-icon.png",
   },
 ];
+export const ArtCardData = [
+  {
+    title: "Insight :",
+    des: "Once we are ready to start the project we will take a brief insight into the requirement you shared with us and get back to you with some queries and suggestions.",
+    digit: "1",
+  },
+  {
+    title: "Examine :",
+    des: "Our whole team from the project manager to developers will examine the final requirement thoroughly and share the time estimation and cost.",
+    digit: "2",
+  },
+  {
+    title: "Build Up :",
+    des: "Our developer will start the work from scratch, and build up a website or an application as per your prime requirement.",
+    digit: "3",
+  },
+  {
+    title: "Enhance :",
+    des: "Following the development part, we will also focus on designing and enhance your brand reputation in the digital world.",
+    digit: "4",
+  },
+  {
+    title: "Deploy :",
+    des: "We will hand over the website to you for review before we go live.",
+    digit: "5",
+  },
+  {
+    title: "Go Live :",
+    des: "FluAfter getting feedback from you, we will make sure all the final changes are done before we make the site live.tter",
+    digit: "6",
+  },
+];
+export const AbsArtCardData = [
+  {
+    title: "Brand Strategy :",
+    des: "Insight Gathering | Brand Positioning | Brand Articulation | Brand Platform Development  | Voice & Tone  | Messaging Strategy |  Brand Story  | Naming |  Tagline Development  | Mentorships",
+    img: "https://ninjatech.agency/wp-content/uploads/2022/06/brand-strategy.png",
+  },
+  {
+    title: "Brand Development :",
+    des: "Brand Identity  | Packaging  | Copywriting  | Illustration |  Motion Design |  Interactive |  Website Design  | Website Development",
+    img: "https://ninjatech.agency/wp-content/uploads/2022/06/brand-development.png",
+  },
+  {
+    title: "Brand Extension:",
+    des: "Marketing Collateral  | Experiential Branding |  Campaign Concepts |  Content Development",
+    img: "https://ninjatech.agency/wp-content/uploads/2022/06/brand-extension.png",
+  },
+];

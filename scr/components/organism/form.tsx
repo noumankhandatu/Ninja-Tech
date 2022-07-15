@@ -7,7 +7,7 @@ import Button from '../molecule/button';
 const Form = () => {
   return (
     <Wrapper contained={true} className="pb-20 pt-16">
-      <p className="text-5xl font-bolder pl-52 pr-52 text-center pb-20">
+      <p className="text-[42px] font-normal pl-52 pr-52 text-center pb-20">
         Submit your project details and get FREE estimation
       </p>
       <div className="grid grid-cols-3 pl-20 pr-20">

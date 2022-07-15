@@ -14,8 +14,7 @@ import {
   PortFolioServicePage,
 } from "../scr/components/atom/testingArrays";
 const Services = () => {
-  const cssProps =
-    "text-[16px] font-medium text-App-orange mr-8  cursor-pointer";
+  const cssProps = "text-[16px] font-medium text-App-orange  cursor-pointer";
   return (
     <div>
       <ExpectMoreBanner
@@ -50,96 +49,125 @@ const Services = () => {
         <p className={"text-[42px] font-medium"}>Our development services</p>
       </Wrapper>
       {/* banners started */}
-      <DeploymentSevicesBanner
-        image="https://ninjatech.agency/wp-content/uploads/2022/06/services-web-mobile.png"
-        title={"Web & Mobile Development"}
-        description={
-          "Our website and mobile application development group have abundant skills in conveying answers for financed new companies and venture organizations."
-        }
-        tagone={"IOS"}
-        tagtwo={"Andriod"}
-        tagthree={"Cross-PlateForm"}
-        tagfour={"Frontend"}
-        tagfive={"Backend"}
-      />
-      <Wrapper contained>
+      <div className="grid grid-cols-[2fr,1fr]">
         <div>
-          <div className="mt-20 mb-20 ">
-            <div className="grid grid-cols-[1fr,2fr]  items-center">
-              <div>
-                <p className="text-[36px]">Ideation & Strategy</p>
-                <div className="flex  mt-5 mb-8 ">
-                  <p className={`${cssProps}`}>Product_Strategy</p>
-                  <p className={`${cssProps}`}>Digital_Transformation</p>
-                  <p className={`${cssProps}`}>Legacy_App_Modernisation</p>
-                  <p className={`${cssProps}`}>Research_and_Development</p>
+          <DeploymentSevicesBanner
+            image="https://ninjatech.agency/wp-content/uploads/2022/06/services-web-mobile.png"
+            title={"Web & Mobile Development"}
+            description={
+              "Our website and mobile application development group have abundant skills in conveying answers for financed new companies and venture organizations."
+            }
+            tagone={"IOS"}
+            tagtwo={"Andriod"}
+            tagthree={"Cross-PlateForm"}
+            tagfour={"Frontend"}
+            tagfive={"Backend"}
+          />
+          <div>
+            <div>
+              <div className="mt-20 mb-20 pl-44">
+                <div className="grid grid-cols-[3fr,1fr]  justify-items-center   items-center">
+                  <div>
+                    <p className="text-[36px]">Ideation & Strategy</p>
+                    <div className="grid grid-cols-3 gap-[10px]  mt-5 mb-8 ">
+                      <p className={`${cssProps}`}>Product_Strategy</p>
+                      <p className={`${cssProps}`}>Digital_Transformation</p>
+                      <p className={`${cssProps}`}>Legacy_App_Modernisation</p>
+                      <p className={`${cssProps}`}>Research_and_Development</p>
+                    </div>
+                    <AppFont>
+                      The idea begins with imagination, and at NinjaTech, we
+                      plan vital moves with substantial business results from
+                      inside the association. To deliver progress significant
+                      for everyone.
+                    </AppFont>
+                  </div>
+                  <div>
+                    <img
+                      src="https://ninjatech.agency/wp-content/uploads/2022/06/ideation-strategy.png"
+                      alt="asd"
+                    />
+                  </div>
                 </div>
-                <AppFont>
-                  The idea begins with imagination, and at NinjaTech, we plan
-                  vital moves with substantial business results from inside the
-                  association. To deliver progress significant for everyone.
-                </AppFont>
               </div>
-              <img
-                className=""
-                src="https://ninjatech.agency/wp-content/uploads/2022/06/ideation-strategy.png"
-                alt=""
-              />
             </div>
           </div>
-        </div>
-      </Wrapper>
-      <DeploymentSevicesBanner
-        title={"Product Design"}
-        image="https://ninjatech.agency/wp-content/uploads/2022/06/product-design.png"
-        description={
-          "Our Design and UX group makes consistent, client-driven plans that feature your image and supercharge your profit. We'll cooperate to make the ideal plan that meets your brief yet ensures your site remains simple to oversee."
-        }
-        tagone={"UX design"}
-        tagtwo={"UI design"}
-        tagthree={"Product Strategy"}
-        tagfour={"Workshops"}
-      />
-      <Wrapper contained>
-        <div>
-          <div className="mt-20 mb-20 ">
-            <div className="grid grid-cols-[1fr,2fr]  items-center">
-              <div>
-                <p className="text-[36px]">Artificial Intelligence</p>
-                <div className="flex   mt-5 mb-8 ">
-                  <p className={`${cssProps}`}>Data_Science</p>
-                  <p className={`${cssProps}`}>Machine_Learning</p>
-                  <p className={`${cssProps}`}>Computer_Vision</p>
-                  <p className={`${cssProps}`}>Voice_Assistants_&_Chatbots</p>
+          <DeploymentSevicesBanner
+            title={"Product Design"}
+            image="https://ninjatech.agency/wp-content/uploads/2022/06/product-design.png"
+            description={
+              "Our Design and UX group makes consistent, client-driven plans that feature your image and supercharge your profit. We'll cooperate to make the ideal plan that meets your brief yet ensures your site remains simple to oversee."
+            }
+            tagone={"UX design"}
+            tagtwo={"UI design"}
+            tagthree={"Product Strategy"}
+            tagfour={"Workshops"}
+          />
+          <div>
+            <div>
+              <div className="mt-20 mb-20 pl-44">
+                <div className="grid grid-cols-[1fr,2fr] justify-items-center items-center">
+                  <div>
+                    <p className="text-[36px]">Artificial Intelligence</p>
+                    <div className="flex   mt-5 mb-8 ">
+                      <p className={`${cssProps}`}>Data_Science</p>
+                      <p className={`${cssProps}`}>Machine_Learning</p>
+                      <p className={`${cssProps}`}>Computer_Vision</p>
+                      <p className={`${cssProps}`}>
+                        Voice_Assistants_&_Chatbots
+                      </p>
+                    </div>
+                    <AppFont>
+                      The innovation can revaluate business processes, make
+                      better client encounters, and increase and improve
+                      independent human direction. It is seen as perhaps the
+                      most significant space of chance for some organizations
+                      today – and a central part of most computerized change
+                      endeavours.
+                    </AppFont>
+                  </div>
+                  <img
+                    className=""
+                    src="https://ninjatech.agency/wp-content/uploads/2022/06/artificial-intelligence.png"
+                    alt=""
+                  />
                 </div>
-                <AppFont>
-                  The innovation can revaluate business processes, make better
-                  client encounters, and increase and improve independent human
-                  direction. It is seen as perhaps the most significant space of
-                  chance for some organizations today – and a central part of
-                  most computerized change endeavours.
-                </AppFont>
               </div>
-              <img
-                className=""
-                src="https://ninjatech.agency/wp-content/uploads/2022/06/artificial-intelligence.png"
-                alt=""
-              />
             </div>
           </div>
+          <DeploymentSevicesBanner
+            title={"Cloud Services"}
+            description={
+              "As an ever-increasing number of organizations search for financially savvy measures to fortify their IT foundation, continuing to the cloud arises as to the most favoured method for doing so."
+            }
+            tagone={"Cloud App Development"}
+            image="https://ninjatech.agency/wp-content/uploads/2022/06/cloud-services.png"
+            tagtwo={"Cloud Deployment        "}
+            tagthree={"AWS Cloud Development"}
+            tagfour={"Google Cloud Development        "}
+          />
         </div>
-      </Wrapper>
-      <DeploymentSevicesBanner
-        title={"Cloud Services"}
-        description={
-          "As an ever-increasing number of organizations search for financially savvy measures to fortify their IT foundation, continuing to the cloud arises as to the most favoured method for doing so."
-        }
-        tagone={"Cloud App Development"}
-        image="https://ninjatech.agency/wp-content/uploads/2022/06/cloud-services.png"
-        tagtwo={"Cloud Deployment        "}
-        tagthree={"AWS Cloud Development"}
-        tagfour={"Google Cloud Development        "}
-      />
+        {/* Sticky Div */}
+        <div className="">
+          <div className="border p-5 border-App-orange rounded-xl sticky top-10  w-[325px] h-[200px]">
+            <AppFont className="leading-loose text-[#495057]">
+              Web & Mobile Development
+            </AppFont>
+            <AppFont className="leading-loose text-[#495057]">
+              Ideation & Strategy
+            </AppFont>
+            <AppFont className="leading-loose text-[#495057]">
+              Product Design
+            </AppFont>
+            <AppFont className="leading-loose text-[#495057]">
+              Artificial Intelligence
+            </AppFont>
+            <AppFont className="leading-loose text-[#495057]">
+              Cloud Services
+            </AppFont>
+          </div>
+        </div>
+      </div>
       {/* pink baner ==>*/}
       <Wrapper full>
         <div className="bg-[#FFF5F3] ">

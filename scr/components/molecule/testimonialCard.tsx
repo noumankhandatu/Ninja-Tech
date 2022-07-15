@@ -1,5 +1,6 @@
 import React from "react";
 import AppFont from "../atom/AppFont";
+import Image from "next/image";
 type TestimonialCardProps = {
   img: string;
   name: string;
@@ -13,7 +14,7 @@ const TestimonialCard = ({
   description,
 }: TestimonialCardProps) => {
   return (
-    <div className="bg-white shadow mb-20 mr-4 p-14 h-[420px] rounded ">
+    <div className="bg-white shadow mb-20 mr-4 p-14 h-[420px] rounded relative">
       <div className="flex items-center ">
         <div>
           <img className="w-[70px] h-[70px] rounded-full" src={img} alt="" />
@@ -24,10 +25,12 @@ const TestimonialCard = ({
         </div>
       </div>
       <AppFont className="mt-8 leading-loose ">{description}</AppFont>
+      <div className="absolute -bottom-14">
+        <Image src="/carouselCliper.png" width={48} height={52}></Image>
+      </div>
     </div>
   );
 };
 
 export default TestimonialCard;
 // ""
-

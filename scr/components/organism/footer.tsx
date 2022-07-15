@@ -22,13 +22,13 @@ const Footer = () => {
             width={139}
             height={57}
           ></Image>
-          <AppFont className="mb-2 mt-3">
+          <AppFont className="mb-4 mt-3">
             Our Agency Provides Custom Software Development Solutions
           </AppFont>
           <Button path="/contact" variant="outlined">
             Get in touch
           </Button>
-          <div className="flex pt-10 pb-5">
+          <div className="flex pt-6 pb-5">
             <BsFacebook
               className={`${iconsProp} hover:text-[#4970BF] hover:bg-white   bg-[#4970BF] border-2 border-[#4970BF]  text-white`}
             />
@@ -94,7 +94,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="pt-3 pb-3">
-        <hr />
+        <hr className="mt-20" />
         <p className="text-center pt-5 text-[16px] text-[#707070]">
           Copyright © 2022 NinjaTech. All rights reserved. | Privacy Policy
           Contact
