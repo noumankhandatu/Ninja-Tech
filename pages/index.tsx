@@ -13,6 +13,8 @@ import {
 import { BsArrowRight } from "react-icons/bs";
 import Link from "next/link";
 import OurTechnologyCard from "../scr/components/molecule/OurTechnologyCard";
+import TestimonialCard from "../scr/components/molecule/testimonialCard";
+import TestimonialCarousel from "../scr/components/organism/testimonialCarousel";
 
 const Home: NextPage = () => {
   const cssProps = "text-[24px] font-bold  mr-8  cursor-pointer";
@@ -152,7 +154,7 @@ const Home: NextPage = () => {
           <p className="text-[22px]   font-semibold active text-App-orange">
             Mobile
           </p>
-          <p className="text-[22px] ml-20  font-semibold #2A2A2A text-[#2A2A2A]">
+          <p className="text-[22px] ml-20  font-semibold #2A2A2A text-[#2A2A2A] ">
             Front End
           </p>
           <p className="text-[22px] ml-20 font-semibold #2A2A2A text-[#2A2A2A]">
@@ -170,9 +172,19 @@ const Home: NextPage = () => {
         </div>
       </Wrapper>
       {/* carousel  =>*/}
-      <Wrapper contained={true} className="mt-20 mb-40">
-        <ItemCarousel />
-      </Wrapper>
+      <div className="bg-[#FFF5F3] pt-20 pb-20">
+        <p className="font-medium text-center text-[42px] mb-20 mt-20">
+          Testimonials & Clients
+        </p>
+        <Wrapper contained={true} className="mt-20 mb-40">
+          <div>
+            <TestimonialCarousel />
+          </div>
+          <div className="mt-20">
+            <ItemCarousel />
+          </div>
+        </Wrapper>
+      </div>
       {/* contact banner */}
       <ProjectInMindBanner />
     </div>
