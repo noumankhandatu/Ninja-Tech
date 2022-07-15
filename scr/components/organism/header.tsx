@@ -8,7 +8,7 @@ const Header = () => {
   const headerEle = [
     {
       title: "About ninja",
-      path: "/",
+      path: "/aboutNinja",
       id: 0,
     },
     {
@@ -35,12 +35,15 @@ const Header = () => {
   return (
     <Wrapper contained={true} className="flex justify-between items-center p-5">
       <div className="flex items-center">
-        <Image
-          src="/logo.png"
-          alt="Picture of the author"
-          width={139}
-          height={57}
-        ></Image>
+        <Link href="/">
+          <Image
+            className="cursor-pointer"
+            src="/logo.png"
+            alt="Picture of the author"
+            width={139}
+            height={57}
+          ></Image>
+        </Link>
         <div className="flex ml-14  items-center">
           {headerEle?.map((items, id) => {
             return (
