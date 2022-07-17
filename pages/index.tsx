@@ -26,7 +26,7 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* Banner */}
-      <Wrapper contained className={"lg:mt-2 mt-32 "}>
+      <Wrapper contained className={"lg:mt-32 mt-32 "}>
         <div className="relative">
           <img
             src="https://ninjatech.agency/wp-content/themes/ninja/assets/images/about-banner.png"
