@@ -4,7 +4,7 @@ export const PortfolioPageArray = [
     description: "Number 2",
     image:
       "https://ninjatech.agency/wp-content/uploads/2021/12/Number_2-630x415.png",
-    catogery: "graphicDesign",
+    catogery: "Graphic Design",
   },
   {
     title: "GROW IN-DOOR PLANTS WITH CLICK & GROW.",
@@ -39,7 +39,7 @@ export const PortfolioPageArray = [
     description: "Fetii Ride",
     image:
       "https://ninjatech.agency/wp-content/uploads/2021/12/Fetii-Ride_2-630x415.png",
-    catogery: "graphicDesign",
+    catogery: "Graphic Design",
   },
 ];
 

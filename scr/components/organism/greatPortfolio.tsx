@@ -26,9 +26,17 @@ const GreatPortfolio = ({ data }: PortfolioProps) => {
     },
   ];
   const [activeBar, setActiveBar] = useState<number>(0);
-  const handleToggles = (id: number) => {
-    alert(id);
+  const [catogrerys, setCatogery] = useState<any>(data);
+  const handleToggles = (id: number, title: string) => {
+    alert(title);
     setActiveBar(id);
+    const updatedItem = data.filter((ele: any) => {
+      return ele.catogery === title;
+    });
+    setCatogery(updatedItem);
+    if (title === "All") {
+      setCatogery(data);
+    }
   };
   return (
     <div className="text-center">
@@ -44,7 +52,7 @@ const GreatPortfolio = ({ data }: PortfolioProps) => {
               onClick={(
                 e: React.MouseEvent<HTMLParagraphElement, MouseEvent>
               ) => {
-                handleToggles(id);
+                handleToggles(id, items.title);
               }}
               className={`${
                 items.id === activeBar ? "active text-App-orange" : "unactive"
@@ -56,7 +64,7 @@ const GreatPortfolio = ({ data }: PortfolioProps) => {
         })}
       </div>
       <div>
-        {data.map((items: any) => {
+        {catogrerys?.map((items: any) => {
           return (
             <>
               <PortfolioCard
