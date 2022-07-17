@@ -17,7 +17,8 @@ import TestimonialCard from "../scr/components/molecule/testimonialCard";
 import TestimonialCarousel from "../scr/components/organism/testimonialCarousel";
 
 const Home: NextPage = () => {
-  const cssProps = "text-[24px] font-bold  mr-8  cursor-pointer";
+  const cssProps =
+    "lg:text-[24px] text-[18px]  font-bold  mr-8  cursor-pointer";
   return (
     <div>
       <Head>
@@ -25,14 +26,14 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* Banner */}
-      <Wrapper contained className={"mt-2"}>
+      <Wrapper contained className={"lg:mt-32 mt-32 "}>
         <div className="relative">
           <img
             src="https://ninjatech.agency/wp-content/themes/ninja/assets/images/about-banner.png"
             alt=""
             width={"100%"}
           />
-          <div className="w-[400px] text-[29px] text-white absolute right-5 top-10 bg-App-orange p-10">
+          <div className="lg:w-[400px] lg:text-[29px]  text-[17px]  text-white lg:absolute right-5 lg:top-10 top-2 bg-App-orange lg:p-10 p-4 ">
             <p className="font-semibold ">NINJATECH CAN</p>
             <p className="font-thin leading-relaxed	">
               ACCOMPLISH YOUR DREAM PROJECT <br />
@@ -42,7 +43,7 @@ const Home: NextPage = () => {
               BRAND QUALITY BUSINESS.
             </p>
             <Link href="services">
-              <div className="flex items-center mt-10 cursor-pointer">
+              <div className="flex items-center lg:mt-10 mt-5 cursor-pointer">
                 <AppFont className="leading-relaxed	">KNOW HOW WE DO IT</AppFont>
                 <BsArrowRight className="ml-4" />
               </div>
@@ -50,39 +51,43 @@ const Home: NextPage = () => {
           </div>
         </div>
         {/* grid 4 */}
-        <div className="grid grid-cols-4 justify-around text-center  bg-[#F5F5F5] p-5">
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-8  justify-around text-center  bg-[#F5F5F5] p-5">
           <div>
-            <p className="font-semibold text-[55px]">2</p>
-            <p className="text-[24px] font-medium">offices</p>
+            <p className="font-semibold lg:text-[55px]  text-[32px] ">2</p>
+            <p className="lg:text-[24px] text-[16px]   font-medium">offices</p>
           </div>
           <div>
-            <p className="font-semibold text-[55px]">11+</p>
-            <p className="text-[24px] font-medium">
+            <p className="font-semibold lg:text-[55px] text-[32px] ">11+</p>
+            <p className="lg:text-[24px] text-[16px]   font-medium">
               years of expertise across the industry
             </p>
           </div>
           <div>
-            <p className="font-semibold text-[55px]">275+</p>
-            <p className="text-[24px] font-medium">clients served</p>
+            <p className="font-semibold lg:text-[55px] text-[32px] ">275+</p>
+            <p className="lg:text-[24px]  text-[16px]  font-medium">
+              clients served
+            </p>
           </div>
           <div>
-            <p className="font-semibold text-[55px]">200+</p>
-            <p className="text-[24px] font-medium">specialists on board</p>
+            <p className="font-semibold lg:text-[55px] text-[32px] ">200+</p>
+            <p className="lg:text-[24px]  text-[16px]  font-medium">
+              specialists on board
+            </p>
           </div>
         </div>
       </Wrapper>
       {/* Brand Cards Rendering */}
-      <Wrapper contained className="text-center p-20">
-        <p className="text-[42px] font-medium">Our Brand</p>
-        <p className="text-[18px] mt-5">
+      <Wrapper contained className="text-center lg:p-20  p-10">
+        <p className="lg:text-[42px] text-[32px] font-medium">Our Brand</p>
+        <p className="lg:text-[18px]  text-[16px]  mt-5">
           Centring the market through our image esteems and advantaging each
           development administration by
         </p>
-        <p className="text-[18px] mb-20">
+        <p className="lg:text-[18px] text-[16px] lg:mb-20 mb-10">
           effectively exhibiting resources for your improvement and encouraging
           your business.
         </p>
-        <div className="grid grid-cols-3 gap-8 ">
+        <div className="grid lg:grid-cols-3 grid-cols-1  gap-8 ">
           {OurBrandArray.map((items) => {
             return (
               <div>
@@ -93,16 +98,18 @@ const Home: NextPage = () => {
         </div>
       </Wrapper>
       {/* Get an opportunity */}
-      <div className="p-20 bg-[#FFF5F3]">
+      <div className="lg:p-20 p-5 bg-[#FFF5F3]">
         <Wrapper contained>
           <div>
             <div className=" ">
-              <div className="grid grid-cols-[1fr,1fr]  items-center">
+              <div className="grid lg:grid-cols-2 grid-cols-1  items-center">
                 <div>
-                  <p className="text-[42px] font-medium">
+                  <p className="lg:text-[42px] text-[32px]  font-medium">
                     Get An Opportunity To
                   </p>
-                  <p className="text-[42px] font-medium">Know Us More;</p>
+                  <p className="lg:text-[42px]  text-[32px] font-medium">
+                    Know Us More
+                  </p>
                   <div className="flex  mt-5 mb-8 ">
                     <p
                       className={`${cssProps} border-b-2 text-App-orange border-App-orange`}
@@ -116,7 +123,7 @@ const Home: NextPage = () => {
                     result-oriented towards uplift your brand in the industry.
                     Ninja believes in focusing mainly on:
                   </AppFont>
-                  <ul className="list-disc text-[18px] font-medium text-[#2A2A2A] ">
+                  <ul className="list-disc lg:text-[18px] text-[15px] font-medium text-[#2A2A2A] ">
                     <li className="mt-6">
                       Delivering high-quality results to the client.
                     </li>
@@ -146,43 +153,39 @@ const Home: NextPage = () => {
         </Wrapper>
       </div>
       {/* TechnologyCards */}
-      <Wrapper contained className="p-20">
-        <p className="text-[42px] text-center font-medium text-[#2A2A2A]">
+      <Wrapper contained className="p-20 ">
+        <p className="lg:text-[42px] text-[32px] text-center font-medium text-[#2A2A2A]">
           Technologies we work with
         </p>
         <div className="flex justify-center mt-16">
-          <p className="text-[22px]   font-semibold active text-App-orange">
+          <p className="lg:text-[22px]  text-[15px]   font-semibold active text-App-orange">
             Mobile
           </p>
-          <p className="text-[22px] ml-20  font-semibold #2A2A2A text-[#2A2A2A] ">
+          <p className="lg:text-[22px] text-[15px] ml-4  font-semibold #2A2A2A text-[#2A2A2A] ">
             Front End
           </p>
-          <p className="text-[22px] ml-20 font-semibold #2A2A2A text-[#2A2A2A]">
+          <p className="lg:text-[22px] text-[15px] ml-4 font-semibold #2A2A2A text-[#2A2A2A]">
             Platforms
           </p>
-          <p className="text-[22px] ml-20 font-semibold #2A2A2A text-[#2A2A2A]">
+          <p className="lg:text-[22px] text-[15px] ml-4 font-semibold #2A2A2A text-[#2A2A2A]">
             CMS
           </p>
         </div>
         <hr className="mb-10" />
-        <div className="grid grid-cols-6 gap-4">
+        <div className="grid lg:grid-cols-6 md:grid-cols-2 grid-cols-1 gap-4">
           {OurTechnologyCardData?.map((items) => {
             return <OurTechnologyCard items={items} />;
           })}
         </div>
       </Wrapper>
       {/* carousel  =>*/}
-      <div className="bg-[#FFF5F3] pt-20 pb-20">
-        <p className="font-medium text-center text-[42px] mb-20 mt-20">
+      <div className="bg-[#FFF5F3] lg:pt-20 pt-10  lg:pb-20 pb-10">
+        <p className="font-medium text-center lg:text-[42px] text-[32px] lg:mb-20 mb-1 lg:mt-20 mt-10">
           Testimonials & Clients
         </p>
-        <Wrapper contained={true} className="mt-20 mb-40">
-          <div>
-            <TestimonialCarousel />
-          </div>
-          <div className="mt-20">
-            <ItemCarousel />
-          </div>
+        <Wrapper contained={true} className="lg:mt-20 mt-10  lg:mb-40 mb-20">
+          <div>{<TestimonialCarousel />}</div>
+          <div className="mt-20">{<ItemCarousel />}</div>
         </Wrapper>
       </div>
       {/* contact banner */}
