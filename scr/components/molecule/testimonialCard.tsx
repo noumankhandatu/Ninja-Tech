@@ -14,7 +14,7 @@ const TestimonialCard = ({
   description,
 }: TestimonialCardProps) => {
   return (
-    <div className="bg-white shadow mb-20 mr-4 p-14 h-[420px] rounded relative">
+    <div className="bg-white shadow mb-20 mr-4 p-14 lg:h-[420px] h-auto rounded relative">
       <div className="flex items-center ">
         <div>
           <img className="w-[70px] h-[70px] rounded-full" src={img} alt="" />
