@@ -38,7 +38,7 @@ const GreatPortfolio = ({ data }: PortfolioProps) => {
     }
   };
   return (
-    <div className="text-center">
+    <div className="text-center mt-12">
       <p className="lg:text-[42px] text-[32px]  mb-4 font-light">Great Portfolio</p>
       <p className="lg:text-[18px] text-[16px]">
         Take a look at some of our brand identity examples are here with each
@@ -55,7 +55,7 @@ const GreatPortfolio = ({ data }: PortfolioProps) => {
               }}
               className={`${
                 items.id === activeBar ? "active text-App-orange" : "unactive"
-              } text-[16px] cursor-pointer  lg:ml-8 ml-5 font-semibold hover:border-b-[#ff5b2e] ease-in-out duration-700`}
+              } text-[16px] cursor-pointer  lg:ml-8 ml-3 font-semibold hover:border-b-[#ff5b2e] ease-in-out duration-700`}
             >
               {items.title}
             </p>
