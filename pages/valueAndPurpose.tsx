@@ -18,11 +18,11 @@ const ValueAndPurpose = () => {
     <div>
       <div className="relative text-center ">
         <div className="bg-[url('/valueandpurp.png')]   brightness-25 h-96 pt-96 pb-28 bg-no-repeat bg-center p-10"></div>
-        <Wrapper contained={true} className=" absolute top-32  text-white">
-          <p className="text-[42px] pt-10 mb-8 text-white">
+        <Wrapper contained={true} className=" absolute lg:top-32  top-24 text-white">
+          <p className="lg:text-[42px]  text-[32px] lg:pt-10 lg:mb-8 mb-5 text-white">
             Our values are both our identity and our promise
           </p>
-          <AppFont className="text-[19px] ">
+          <AppFont className="lg:text-[19px] text-[16px]  ">
             NinjaTech has the virtue of delivering the work flawlessly, our
             values are the reflection of our identity and commitment. Our team
             is always ready to welcome the new challenges to work and convey
@@ -35,7 +35,7 @@ const ValueAndPurpose = () => {
         <div className="bg-[url('/value-banner.png')] bg-[#F5F5F5] h-[500px] bg-no-repeat bg-cover bg-center"></div>
         <Wrapper contained={true} className=" absolute top-32  text-white ">
           <p className="text-[42px] mb-8 text-black">Values and Purpose</p>
-          <div className="grid grid-cols-7 gap-16 text-center  items-center  ">
+          <div className="grid lg:grid-cols-7 md:grid-cols-2 grid-cols-1 gap-16 text-center  items-center  ">
             {ValuesData?.map((items) => {
               return (
                 <div className="text-center flex flex-col items-center justify-items-center">
@@ -50,7 +50,9 @@ const ValueAndPurpose = () => {
         </Wrapper>
         {/* All Cards */}
         <Wrapper contained className="">
-          <div className={`grid grid-cols-2 gap-10 relative -top-20 `}>
+          <div
+            className={`grid lg:grid-cols-2  grid-cols-1 gap-10 relative -top-20 `}
+          >
             {ValuePurpCardData?.map((items, id) => {
               return (
                 <div>
