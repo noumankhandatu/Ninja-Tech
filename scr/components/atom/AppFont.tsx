@@ -2,8 +2,8 @@ import React from "react";
 type AppFontProps = {
   children: string;
   className?: string;
-  startIcon?: any;
-  endIcon?: any;
+  startIcon?: React.ReactNode | any;
+  endIcon?: React.ReactNode | any;
 };
 const AppFont = ({ children, className, endIcon, startIcon }: AppFontProps) => {
   return (

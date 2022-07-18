@@ -7,7 +7,7 @@ type DeployProps = {
   tagthree?: string;
   tagfour?: string;
   tagfive?: string;
-  image: any;
+  image: string;
 };
 const DeploymentSevicesBanner = ({
   image,
@@ -26,7 +26,11 @@ const DeploymentSevicesBanner = ({
       <div className="">
         <div className="grid lg:grid-cols-[0.5fr,1fr]  grid-cols-1  lg:gap-40 gap-10 items-center">
           <div className="relative bg-[#F5F5F5] lg:h-[450px] h-auto lg:w-[400px] w-auto p-10 ">
-            <img className="lg:absolute lg:-right-32" src={image} alt="images" />
+            <img
+              className="lg:absolute lg:-right-32"
+              src={image}
+              alt="images"
+            />
           </div>
           <div className="p-5">
             <p className="text-[36px]">{title}</p>

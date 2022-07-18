@@ -1,6 +1,11 @@
 import React from "react";
 type TechProps = {
-  items: any;
+  items:
+    | {
+        title: string;
+        img: string;
+      }[]
+    | any;
 };
 const OurTechnologyCard = ({ items }: TechProps) => {
   const { img, title } = items;
