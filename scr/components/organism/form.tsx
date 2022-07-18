@@ -10,7 +10,7 @@ const Form = () => {
       <p className="lg:text-[42px] text-[32px]  font-normal text-center pb-20">
         Submit your project details and get FREE estimation
       </p>
-      <div className="grid lg:grid-cols-3 grid-cols-1 lg:pl-20 lg:pr-20 p-2">
+      <div className="grid lg:grid-cols-3 grid-cols-1 lg:pl-20 lg:gap-10 lg:pr-20 p-2">
         <Input label="YOUR NAME" />
         <Input label="PHONE NUMBER" />
         <Input label="YOUR EMAIL" />
