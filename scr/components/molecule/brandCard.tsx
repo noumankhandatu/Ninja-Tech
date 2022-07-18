@@ -24,7 +24,7 @@ const BrandCard = ({
   return (
     <div
       style={{ backgroundImage: `url(${bgImg})` }}
-      className={`${className} p-10 border-2 mt-10  rounded-2xl overflow-hidden`}
+      className={`${className} p-10 border-2 mt-10  rounded-2xl bg-cover  overflow-hidden`}
     >
       <p className={`${titleClass} text-[36px] font-bold `}>{title}</p>
       <p className={`${descriptionClass} text-[14px] mt-5 mb-5`}>

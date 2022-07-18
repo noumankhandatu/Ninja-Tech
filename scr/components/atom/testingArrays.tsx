@@ -226,34 +226,42 @@ export const OurTechnologyCardData = [
   {
     title: "iOS",
     img: "https://ninjatech.agency/wp-content/themes/ninja/assets/images/iOS.png",
+    catogrey: "mobile",
   },
   {
     title: "Android",
     img: "https://ninjatech.agency/wp-content/themes/ninja/assets/images/Android.png",
+    catogrey: "plateform",
   },
   {
     title: "Flutter",
     img: "https://ninjatech.agency/wp-content/themes/ninja/assets/images/Flutter.png",
+    catogrey: "frontend",
   },
   {
     title: "React Native",
     img: "https://ninjatech.agency/wp-content/themes/ninja/assets/images/ReactNative.png",
+    catogrey: "frontend",
   },
   {
     title: "IONIC",
     img: "https://ninjatech.agency/wp-content/themes/ninja/assets/images/ionic-icon.png",
+    catogrey: "cms",
   },
   {
     title: "PhoneGap",
     img: "https://ninjatech.agency/wp-content/themes/ninja/assets/images/phonegap-icon.png",
+    catogrey: "plateform",
   },
   {
     title: "Kotlin",
     img: "https://ninjatech.agency/wp-content/themes/ninja/assets/images/Kotlin.png",
+    catogrey: "mobile",
   },
   {
     title: "Swift",
     img: "https://ninjatech.agency/wp-content/themes/ninja/assets/images/swift-icon.png",
+    catogrey: "mobile",
   },
 ];
 export const ArtCardData = [

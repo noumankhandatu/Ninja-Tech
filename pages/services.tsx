@@ -31,7 +31,7 @@ const Services = () => {
           <p className="lg:first-letter:text-[42px] text-[32px]">
             You Share Your Idea
           </p>
-          <p className="lg:first-letter:text-[42px]  text-[32px]font-bold">
+          <p className="lg:first-letter:text-[42px]  text-[32px] font-bold">
             We get it done
           </p>
         </div>
@@ -174,23 +174,23 @@ const Services = () => {
       </div>
       {/* pink baner ==>*/}
       <Wrapper full>
-        <div className="bg-[#FFF5F3] ">
-          <div className="gap-10  lg:p-32 p-10  pb-10 lg:flex lg:flex-row flex flex-col  justify-evenly items-center ">
+        <div className="bg-[#FFF5F3] mt-10">
+          <div className="gap-10   lg:p-28 p-10  pb-10 lg:flex lg:flex-row flex flex-col  justify-evenly items-center ">
             <p className={"lg:text-[42px] text-[32px] font-bold"}>
               Tangible results,
               <br />
               right on schedule
             </p>
             <div>
-              <p className={"text-[42px] font-bold"}>2 days</p>
+              <p className={"lg:text-[42px] text-[32px]  font-bold"}>2 days</p>
               <small className={"text-[18px]"}>for an estimate</small>
             </div>
             <div>
-              <p className={"text-[42px] font-bold"}>2 weeks</p>
+              <p className={"lg:text-[42px] text-[32px]  font-bold"}>2 weeks</p>
               <small className={"text-[18px]"}>for the prototype</small>
             </div>
             <div>
-              <p className={"text-[42px] font-bold"}>3 months</p>
+              <p className={"lg:text-[42px]  text-[32px] font-bold"}>3 months</p>
               <small className={"text-[18px]"}>for the MVP</small>
             </div>
           </div>
