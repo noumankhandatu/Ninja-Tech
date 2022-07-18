@@ -28,7 +28,6 @@ const GreatPortfolio = ({ data }: PortfolioProps) => {
   const [activeBar, setActiveBar] = useState<number>(0);
   const [catogrerys, setCatogery] = useState<any>(data);
   const handleToggles = (id: number, title: string) => {
-    alert(title);
     setActiveBar(id);
     const updatedItem = data.filter((ele: any) => {
       return ele.catogery === title;
