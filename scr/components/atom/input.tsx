@@ -15,10 +15,9 @@ const Input = ({ label }: InputProps) => {
         </div>
         <div className="pt-4">
           <input
-            style={{ width: "352px" }}
             type="text"
             id="first"
-            className="bg-blue-50 border border-[#B8C8CF] outline-0  pl-1 pr-1 rounded h-9 	"
+            className="bg-blue-50 w-full border border-[#B8C8CF] outline-0  pl-1 pr-1 rounded h-9 	"
             name="first"
             required
           />
