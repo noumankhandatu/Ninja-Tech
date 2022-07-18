@@ -45,16 +45,25 @@ export const PortfolioPageArray = [
 
 export const PortFolioServicePage = [
   {
-    title: "NUMBER 2 IS E-COMMERCE WEBSITE PROVIDING TOILET PAPERS.",
-    description: "Number 2",
+    title: "CONTROL ALL OF YOUR HOME AUTOMATION AND AV DEVICES FROM ONE APP.",
+    description: "Home Remote",
     image:
-      "https://ninjatech.agency/wp-content/uploads/2021/12/Number_2-630x415.png",
+      "https://ninjatech.agency/wp-content/uploads/2021/12/Home-Remote-630x415.png",
+    catogery: "Design",
   },
   {
-    title: "GROW IN-DOOR PLANTS WITH CLICK & GROW.",
-    description: "Click & Grow",
+    title: "FIND YOUR DREAM HOME WITH REDBRICKS.",
+    description: "Redbrick",
     image:
-      "https://ninjatech.agency/wp-content/uploads/2021/12/Click-Grow_1-630x415.png",
+      "https://ninjatech.agency/wp-content/uploads/2021/12/Redbrick-630x415.png",
+    catogery: "Branding",
+  },
+  {
+    title: "GO ON A GROUP RIDE WITH FETTI RIDE.",
+    description: "Fetii Ride",
+    image:
+      "https://ninjatech.agency/wp-content/uploads/2021/12/Fetii-Ride_2-630x415.png",
+    catogery: "Graphic Design",
   },
 ];
 
