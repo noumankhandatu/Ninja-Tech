@@ -10,7 +10,7 @@ const Drawer = ({ setActiveLink, activeLink }: DrawerProps) => {
   return (
     <div className="bg-white md:w-[700px]   sm:w-[600px]  w-[300px]  shadow-[0_3px_9px_rgba(0,0,0,0.2)] p-2 absolute z-10 top-12 right-0 ">
       <div className="block  items-center p-2 ">
-        {headerEle?.map((items: any, id: any) => {
+        {headerEle?.map((items: {}[] | any, id: number) => {
           return (
             <Link href={`${items.path}`}>
               <p

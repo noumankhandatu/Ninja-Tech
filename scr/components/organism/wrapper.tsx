@@ -3,7 +3,7 @@ type WrapperProps = {
   children: React.ReactNode;
   full?: boolean;
   contained?: boolean;
-  className?: any;
+  className?: string;
 };
 const Wrapper = ({ children, contained, full, className }: WrapperProps) => {
   return (
