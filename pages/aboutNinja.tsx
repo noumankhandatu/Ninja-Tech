@@ -28,7 +28,7 @@ const AboutNinja: NextPage = () => {
       />
       {/* small three boxes */}
       <Wrapper contained={true}>
-        <div className="grid grid-cols-2  pt-20 pb-20">
+        <div className="grid lg:grid-cols-2 lg:gap-0 gap-10  grid-cols-1 pt-20 pb-20">
           <div>
             <Image
               src="/intro.png"
@@ -52,7 +52,7 @@ const AboutNinja: NextPage = () => {
               versatile applications and website infrastructure to deal with the
               requests of our clients.
             </p>
-            <div className="flex gap-10 justify-between mt-20">
+            <div className="lg:flex lg:flex-row flex flex-col items-center  gap-10 justify-between mt-20">
               <SmallCard numbers={"2"} tag={"offices"} />
               <SmallCard
                 numbers={"11+"}
@@ -69,10 +69,14 @@ const AboutNinja: NextPage = () => {
         className="pt-20 relative pb-72"
       >
         <Wrapper contained={true}>
-          <div className="grid grid-cols-[1fr,2fr] items-center">
+          <div className="grid lg:grid-cols-[1fr,2fr] grid-cols-1 lg:gap-0 gap-10 items-center">
             <div>
-              <p className="text-[42px] font-light">CAPABILITIES</p>
-              <p className="text-[42px] font-semibold">Art In Branding.</p>
+              <p className="lg:text-[42px] text-[32px]  font-light">
+                CAPABILITIES
+              </p>
+              <p className="lg:text-[42px] text-[32px]  font-semibold">
+                Art In Branding.
+              </p>
             </div>
             <div>
               <AppFont className="leading-loose tracking-wide font-[500]		text-[#2A2A2A]		">
@@ -88,7 +92,7 @@ const AboutNinja: NextPage = () => {
         </Wrapper>
         <Wrapper
           contained
-          className="grid grid-cols-3 absolute top-64 gap-10 pt-10 pl-20 pr-20"
+          className="grid lg:grid-cols-3 grid-cols-1 lg:absolute  top-64 gap-10 pt-10 pl-20 pr-20"
         >
           {AbsArtCardData?.map((items) => {
             return <ArtCard items={items} />;
@@ -97,10 +101,10 @@ const AboutNinja: NextPage = () => {
       </div>
       <div className="pt-72 pb-32">
         <Wrapper contained={true}>
-          <div className="grid grid-cols-[1fr,1fr] gap-10">
+          <div className="grid lg:grid-cols-2 grid-cols-1   gap-10">
             <div>
-              <p className="text-5xl pb-5">Our Name</p>
-              <p className="text-4xl font-bold pb-10">Inspires Our Values.</p>
+              <p className="lg:text-5xl text-[42px] pb-5">Our Name</p>
+              <p className="lg:text-4xl text-[32px] font-bold pb-10">Inspires Our Values.</p>
               <div>
                 <InspireBanner
                   title={"Courage."}
@@ -138,7 +142,7 @@ const AboutNinja: NextPage = () => {
             Begins with the expertise of our services we always work according
             to the process we have mentioned below:
           </p>
-          <div className="grid grid-cols-3 gap-10 pt-10">
+          <div className="grid lg:grid-cols-3 grid-cols-1 gap-10 pt-10">
             {ArtCardData?.map((items) => {
               return <ArtCard items={items} />;
             })}
@@ -151,14 +155,14 @@ const AboutNinja: NextPage = () => {
         <div className="bg-[url('/carrier.jpg')]  h-96 text-center pt-80 pb-60 bg-no-repeat bg-center p-10"></div>
         <Wrapper
           contained={true}
-          className=" absolute top-32 right-0 left-0 text-center  "
+          className=" absolute lg:top-32 top-16 right-0 left-0 text-center  "
         >
-          <p className="text-4xl pt-10 ">Jump-start your career with</p>
-          <p className="text-4xl pb-10">NinjaTech</p>
-          <p className="text-2xl">
+          <p className="lg:text-4xl text-[32px]  pt-10 ">Jump-start your career with</p>
+          <p className="lg:text-4xl  text-[32px] pb-10">NinjaTech</p>
+          <p className="lg:text-2xl text-[18px]">
             If you’re passionate about Internet marketing, web
           </p>
-          <p className="text-2xl">
+          <p className="lg:text-2xl  text-[18px]">
             design, or web development, we want to hear from you!
           </p>
           <div className="flex mt-12 justify-center">

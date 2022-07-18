@@ -1,6 +1,6 @@
 const TextArea = () => {
   return (
-    <div className="pl-20 pr-20">
+    <div className="lg:pl-20 pl-2 lg:pr-20 pr-2">
       <label className="block mb-2 text-[16px] font-medium text-[#2A2A2A]">MESSAGE *</label>
       <textarea
         id="message"

@@ -10,13 +10,13 @@ const Branch = () => {
     <div>
       <div className="bg-[#FCF1EF] pt-20 pb-40">
         <Wrapper contained>
-          <div className="grid grid-cols-2 gap-20 ">
+          <div className="grid lg:grid-cols-2 grid-cols-1 gap-20 ">
             <div>
               <div>
-                <p className="text-[60px] font-light text-[#2A2A2A]">
-                  We're Better{" "}
+                <p className="lg:text-[60px] text-[42px] font-light text-[#2A2A2A]">
+                  We're Better
                 </p>
-                <p className="text-[60px] font-light	 text-[#2A2A2A]">
+                <p className="lg:text-[60px] text-[42px]  font-light	 text-[#2A2A2A]">
                   Together
                 </p>
               </div>
@@ -37,29 +37,29 @@ const Branch = () => {
         </Wrapper>
       </div>
       {/* creator div =>*/}
-      <div className="pt-20 pb-40">
+      <div className="pt-20 lg:pb-40 pb-20">
         <Wrapper contained>
-          <div className="grid grid-cols-2 gap-20 items-center">
+          <div className="grid lg:grid-cols-2 grid-cols-1  gap-20 items-center">
             <div>
               <img
-                className="w-[685px] h-[500px]"
+                className="lg:w-[685px] w-auto h-auto lg:h-[500px]"
                 src="https://ninjatech.agency/wp-content/uploads/2022/06/agency.png"
               />
             </div>
             <div>
               <div>
-                <p className="text-[42px] font-light text-[#2A2A2A]">
+                <p className="lg:text-[42px] text-[32px] font-light text-[#2A2A2A]">
                   We are A Creative Agency with a passion for design
                 </p>
               </div>
-              <p className="mt-2 text-[18px]  text-[#2A2A2A] leading-8	">
+              <p className="mt-2 lg:text-[18px]  text-[16px]  text-[#2A2A2A] leading-8	">
                 The team of NinjaTech is always passionate about creativity,
                 every employee always comes up with many creative and engaging
                 ideas for the suggestions for each client. We love to build an
                 attractive look for your website, app, or software. We are very
                 fascinated by the design of your project.
               </p>
-              <p className="mt-2 text-[18px]  text-[#2A2A2A] leading-8	">
+              <p className="mt-2 lg:text-[18px] text-[16px]   text-[#2A2A2A] leading-8	">
                 Our expert designers and developers will always be mindful to
                 build a flawless, attractive, and engaging website for your
                 business.
@@ -71,16 +71,16 @@ const Branch = () => {
       {/* Branch => */}
       <div className="bg-[#F5F5F5] pt-20 pb-40">
         <Wrapper contained>
-          <p className="font-light text-[42px] text-center">
+          <p className="font-light  lg:text-[42px] text-[32px]  text-center">
             We help Brands with
           </p>
-          <p className="text-[18px] text-center mt-4">
+          <p className="lg:text-[18px] text-[16px] text-center mt-4">
             We are here with our services which will help to enhance your brand
             identity and make your business more <br /> profitable and
             captivating.
           </p>
           {/* Cards Rendered */}
-          <div className="grid grid-cols-[1.6fr,1fr] gap-10">
+          <div className="grid lg:grid-cols-[1.6fr,1fr] grid-cols-1  gap-10">
             <BrandCard
               btnVariant="primary"
               title={"Software Development:"}
@@ -101,7 +101,7 @@ const Branch = () => {
             />
           </div>
           {/* second grid of cards */}
-          <div className="grid grid-cols-[1fr,1fr] gap-10">
+          <div className="grid lg:grid-cols-[1fr,1fr]  grid-cols-1  gap-10">
             <BrandCard
               btnVariant="contained"
               flexer={true}

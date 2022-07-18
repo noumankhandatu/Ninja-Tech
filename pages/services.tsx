@@ -25,11 +25,15 @@ const Services = () => {
       />
       <Wrapper
         contained={true}
-        className="grid grid-cols-[1fr,2fr]  pb-10 pt-10"
+        className="grid lg:grid-cols-[1fr,2fr] grid-cols-1  pb-10 pt-10"
       >
         <div>
-          <p className="text-[42px]">You Share Your Idea</p>
-          <p className="text-[42px] font-bold">We get it done</p>
+          <p className="lg:first-letter:text-[42px] text-[32px]">
+            You Share Your Idea
+          </p>
+          <p className="lg:first-letter:text-[42px]  text-[32px] font-bold">
+            We get it done
+          </p>
         </div>
         <div>
           <p className="text-[19px]">
@@ -49,7 +53,7 @@ const Services = () => {
         <p className={"text-[42px] font-medium"}>Our development services</p>
       </Wrapper>
       {/* banners started */}
-      <div className="grid grid-cols-[2fr,1fr]">
+      <div className="grid lg:grid-cols-[2fr,1fr] grid-cols-1">
         <div>
           <DeploymentSevicesBanner
             image="https://ninjatech.agency/wp-content/uploads/2022/06/services-web-mobile.png"
@@ -65,11 +69,11 @@ const Services = () => {
           />
           <div>
             <div>
-              <div className="mt-20 mb-20 pl-44">
-                <div className="grid grid-cols-[3fr,1fr]  justify-items-center   items-center">
+              <div className="mt-20 mb-20 lg:pl-44 pl-5">
+                <div className="grid lg:grid-cols-[3fr,1fr] grid-cols-1  justify-items-center   items-center">
                   <div>
                     <p className="text-[36px]">Ideation & Strategy</p>
-                    <div className="grid grid-cols-3 gap-[10px]  mt-5 mb-8 ">
+                    <div className="grid lg:grid-cols-3 grid-cols-1 gap-[10px]  mt-5 mb-8 ">
                       <p className={`${cssProps}`}>Product_Strategy</p>
                       <p className={`${cssProps}`}>Digital_Transformation</p>
                       <p className={`${cssProps}`}>Legacy_App_Modernisation</p>
@@ -105,11 +109,11 @@ const Services = () => {
           />
           <div>
             <div>
-              <div className="mt-20 mb-20 pl-44">
-                <div className="grid grid-cols-[1fr,2fr] justify-items-center items-center">
+              <div className="mt-20 mb-20 lg:pl-44 pl-5">
+                <div className="grid lg:grid-cols-[1fr,2fr] grid-cols-1  justify-items-center items-center">
                   <div>
                     <p className="text-[36px]">Artificial Intelligence</p>
-                    <div className="flex   mt-5 mb-8 ">
+                    <div className="lg:flex flex-cols  mt-5 mb-8 ">
                       <p className={`${cssProps}`}>Data_Science</p>
                       <p className={`${cssProps}`}>Machine_Learning</p>
                       <p className={`${cssProps}`}>Computer_Vision</p>
@@ -142,14 +146,14 @@ const Services = () => {
             }
             tagone={"Cloud App Development"}
             image="https://ninjatech.agency/wp-content/uploads/2022/06/cloud-services.png"
-            tagtwo={"Cloud Deployment        "}
+            tagtwo={"Cloud Deployment"}
             tagthree={"AWS Cloud Development"}
-            tagfour={"Google Cloud Development        "}
+            tagfour={"Google Cloud Development"}
           />
         </div>
         {/* Sticky Div */}
         <div className="">
-          <div className="border p-5 border-App-orange rounded-xl sticky top-10  w-[325px] h-[200px]">
+          <div className="border p-5 border-App-orange rounded-xl sticky top-40  w-[325px] h-[200px]">
             <AppFont className="leading-loose text-[#495057]">
               Web & Mobile Development
             </AppFont>
@@ -170,23 +174,23 @@ const Services = () => {
       </div>
       {/* pink baner ==>*/}
       <Wrapper full>
-        <div className="bg-[#FFF5F3] ">
-          <div className="gap-10  p-32  pb-10 flex justify-evenly items-center ">
-            <p className={"text-[42px] font-bold"}>
+        <div className="bg-[#FFF5F3] mt-10">
+          <div className="gap-10   lg:p-28 p-10  pb-10 lg:flex lg:flex-row flex flex-col  justify-evenly items-center ">
+            <p className={"lg:text-[42px] text-[32px] font-bold"}>
               Tangible results,
               <br />
               right on schedule
             </p>
             <div>
-              <p className={"text-[42px] font-bold"}>2 days</p>
+              <p className={"lg:text-[42px] text-[32px]  font-bold"}>2 days</p>
               <small className={"text-[18px]"}>for an estimate</small>
             </div>
             <div>
-              <p className={"text-[42px] font-bold"}>2 weeks</p>
+              <p className={"lg:text-[42px] text-[32px]  font-bold"}>2 weeks</p>
               <small className={"text-[18px]"}>for the prototype</small>
             </div>
             <div>
-              <p className={"text-[42px] font-bold"}>3 months</p>
+              <p className={"lg:text-[42px]  text-[32px] font-bold"}>3 months</p>
               <small className={"text-[18px]"}>for the MVP</small>
             </div>
           </div>
@@ -212,12 +216,12 @@ const Services = () => {
         <Wrapper contained className="p-4">
           <div>
             <div className="mt-20 mb-20 ">
-              <div className="grid grid-cols-[1fr,1fr] justify-center  justify-items-center	  items-center">
+              <div className="grid lg:grid-cols-2 grid-cols-1 justify-center  justify-items-center	  items-center">
                 <div>
                   <p className="text-[36px]">
                     Our expertise covers many industries
                   </p>
-                  <div className="flex   mt-5 mb-8 ">
+                  <div className="lg:flex lg:flex-row flex flex-col   mt-5 mb-8 ">
                     <p className={`${cssProps} bg-white p-2 rounded`}>
                       Healthcare
                     </p>
@@ -245,7 +249,7 @@ const Services = () => {
       </Wrapper>
       {/* Techonology Cards ==>*/}
       <Wrapper contained className="p-32">
-        <div className="grid grid-cols-[1fr,1.4fr] gap-10 items-center">
+        <div className="grid lg:grid-cols-[1fr,1.4fr] grid-cols-1  gap-10 items-center">
           <div>
             <p className="text-[42px] font-normal">
               Let's choose the best technology for you
@@ -271,7 +275,7 @@ const Services = () => {
               Get a Quote
             </Button>
           </div>
-          <div className="grid grid-cols-3 gap-5 rounded ">
+          <div className="grid lg:grid-cols-3 grid-cols-1 gap-5 rounded ">
             {TechnologyCardData.map((items) => {
               return <TechnologyCard items={items} />;
             })}

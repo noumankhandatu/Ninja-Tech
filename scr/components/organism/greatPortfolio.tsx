@@ -28,7 +28,6 @@ const GreatPortfolio = ({ data }: PortfolioProps) => {
   const [activeBar, setActiveBar] = useState<number>(0);
   const [catogrerys, setCatogery] = useState<any>(data);
   const handleToggles = (id: number, title: string) => {
-    alert(title);
     setActiveBar(id);
     const updatedItem = data.filter((ele: any) => {
       return ele.catogery === title;
@@ -39,13 +38,13 @@ const GreatPortfolio = ({ data }: PortfolioProps) => {
     }
   };
   return (
-    <div className="text-center">
-      <p className="text-[42px]  mb-4 font-light">Great Portfolio</p>
-      <p className="text-[18px]">
+    <div className="text-center mt-12">
+      <p className="lg:text-[42px] text-[32px]  mb-4 font-light">Great Portfolio</p>
+      <p className="lg:text-[18px] text-[16px]">
         Take a look at some of our brand identity examples are here with each
         different service and solution we provide.
       </p>
-      <div className="flex  cursor-pointer mt-12 justify-center text-center">
+      <div className="flex items-center cursor-pointer mt-12 justify-center text-center">
         {TabsItems.map((items, id) => {
           return (
             <p
@@ -56,7 +55,7 @@ const GreatPortfolio = ({ data }: PortfolioProps) => {
               }}
               className={`${
                 items.id === activeBar ? "active text-App-orange" : "unactive"
-              } text-[16px] cursor-pointer  ml-8 font-semibold hover:border-b-[#ff5b2e] ease-in-out duration-700`}
+              } text-[16px] cursor-pointer  lg:ml-8 ml-3 font-semibold hover:border-b-[#ff5b2e] ease-in-out duration-700`}
             >
               {items.title}
             </p>

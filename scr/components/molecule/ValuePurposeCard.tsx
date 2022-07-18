@@ -16,7 +16,7 @@ const ValuePurposeCard = ({ items }: ValueCardProps) => {
       style={{ boxShadow: "0 3px 9px rgb(0 0 0 / 16%)" }}
     >
       <p className="text-[42px] text-left capitalize mb-4	">{title}</p>
-      <div className="flex items-center ">
+      <div className="lg:flex lg:flex-row flex flex-col items-center ">
         <p className="text-[15px] tracking-wider leading-7 text-left">
           {description}
         </p>

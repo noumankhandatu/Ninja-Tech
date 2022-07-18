@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import type { NextPage } from "next";
 import Head from "next/head";
 import Wrapper from "../scr/components/organism/wrapper";
@@ -19,6 +20,13 @@ import TestimonialCarousel from "../scr/components/organism/testimonialCarousel"
 const Home: NextPage = () => {
   const cssProps =
     "lg:text-[24px] text-[18px]  font-bold  mr-8  cursor-pointer";
+  const [activeCards, setActiveCards] = useState(OurTechnologyCardData);
+  const handleCardsToggle = (e: string) => {
+    const newState = OurTechnologyCardData.filter((ele) => {
+      return ele.catogrey === e;
+    });
+    setActiveCards(newState);
+  };
   return (
     <div>
       <Head>
@@ -158,22 +166,42 @@ const Home: NextPage = () => {
           Technologies we work with
         </p>
         <div className="flex justify-center mt-16">
-          <p className="lg:text-[22px]  text-[15px]   font-semibold active text-App-orange">
+          <p
+            onClick={() => {
+              handleCardsToggle("mobile");
+            }}
+            className="lg:text-[22px]   text-[15px] ml-8 cursor-pointer  font-semibold active text-App-orange"
+          >
             Mobile
           </p>
-          <p className="lg:text-[22px] text-[15px] ml-4  font-semibold #2A2A2A text-[#2A2A2A] ">
+          <p
+            onClick={() => {
+              handleCardsToggle("frontend");
+            }}
+            className="lg:text-[22px]  text-[15px] ml-8  cursor-pointer font-semibold #2A2A2A text-[#2A2A2A] "
+          >
             Front End
           </p>
-          <p className="lg:text-[22px] text-[15px] ml-4 font-semibold #2A2A2A text-[#2A2A2A]">
+          <p
+            onClick={() => {
+              handleCardsToggle("plateform");
+            }}
+            className="lg:text-[22px]  text-[15px] ml-8 cursor-pointer font-semibold #2A2A2A text-[#2A2A2A]"
+          >
             Platforms
           </p>
-          <p className="lg:text-[22px] text-[15px] ml-4 font-semibold #2A2A2A text-[#2A2A2A]">
+          <p
+            onClick={() => {
+              handleCardsToggle("cms");
+            }}
+            className="lg:text-[22px]  text-[15px] ml-8 cursor-pointer font-semibold #2A2A2A text-[#2A2A2A]"
+          >
             CMS
           </p>
         </div>
         <hr className="mb-10" />
         <div className="grid lg:grid-cols-6 md:grid-cols-2 grid-cols-1 gap-4">
-          {OurTechnologyCardData?.map((items) => {
+          {activeCards?.map((items) => {
             return <OurTechnologyCard items={items} />;
           })}
         </div>

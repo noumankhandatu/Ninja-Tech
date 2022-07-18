@@ -24,13 +24,13 @@ const DeploymentSevicesBanner = ({
   return (
     <div>
       <div className="">
-        <div className="grid grid-cols-[0.5fr,1fr] gap-40 items-center">
-          <div className="relative bg-[#F5F5F5] h-[450px] w-[400px] p-10 ">
-            <img className="absolute -right-32" src={image} alt="images" />
+        <div className="grid lg:grid-cols-[0.5fr,1fr]  grid-cols-1  lg:gap-40 gap-10 items-center">
+          <div className="relative bg-[#F5F5F5] lg:h-[450px] h-auto lg:w-[400px] w-auto p-10 ">
+            <img className="lg:absolute lg:-right-32" src={image} alt="images" />
           </div>
-          <div>
+          <div className="p-5">
             <p className="text-[36px]">{title}</p>
-            <div className="flex flex-wrap mt-5 mb-8 ">
+            <div className="flex  flex-wrap mt-5 mb-8 ">
               <p className={`${cssProps}`}>{tagone}</p>
               <p className={`${cssProps}`}>{tagtwo}</p>
               <p className={`${cssProps}`}>{tagthree}</p>

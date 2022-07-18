@@ -37,7 +37,7 @@ const Header = () => {
   const [drawerOpen, setDrawerOpen] = useState<boolean>(false);
 
   return (
-    <div className="pb-20">
+    <div className="pb-10">
       <Wrapper
         contained={true}
         className="flex shadow  fixed ease-in-out duration-1000 bg-white z-10 top-0 left-0 right-0 justify-between items-center p-5"
